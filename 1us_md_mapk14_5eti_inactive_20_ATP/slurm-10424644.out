@@ -1,0 +1,62 @@
+                      :-) GROMACS - gmx mdrun, 2019.2 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar      Christian Blau   Viacheslav Bolnykh     Kevin Boyd    
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra       Alan Gray     
+  Gerrit Groenhof     Anca Hamuraru    Vincent Hindriksen  M. Eric Irrgang  
+  Aleksei Iupinov   Christoph Junghans     Joe Jordan     Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg     Erik Marklund   
+    Pascal Merz     Pieter Meulenhoff    Teemu Murtola       Szilard Pall   
+    Sander Pronk      Roland Schulz      Michael Shirts    Alexey Shvetsov  
+   Alfons Sijbers     Peter Tieleman      Jon Vincent      Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2018, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2019.2
+Executable:   /apps/spack/brown/apps/gromacs/2019.2-intel-17.0.1-x6aojsj/bin/gmx_mpi
+Data prefix:  /apps/spack/brown/apps/gromacs/2019.2-intel-17.0.1-x6aojsj
+Working dir:  /scratch/brown/gwijewar/1us_md_mapk14_5eti_20_ATP
+Command line:
+  gmx_mpi mdrun -deffnm ie -rerun md_0_10.xtc -nb cpu
+
+
+Back Off! I just backed up ie.log to ./#ie.log.1#
+Reading file ie.tpr, VERSION 2019.2 (single precision)
+Multiple energy groups is not implemented for GPUs, falling back to the CPU. For better performance, run on the GPU without energy groups and then do gmx mdrun -rerun option on the trajectory with an energy group .tpr file.
+Changing nstlist from 20 to 80, rlist from 1.222 to 1.319
+
+
+Using 1 MPI process
+Using 24 OpenMP threads 
+
+
+Back Off! I just backed up ie.edr to ./#ie.edr.1#
+starting md rerun 'Protein in water', reading coordinates from input trajectory 'md_0_10.xtc'
+
+Reading frame       0 time    0.000   Reading frame       1 time   10.000   Reading frame       2 time   20.000   Reading frame       3 time   30.000   Reading frame       4 time   40.000   Reading frame       5 time   50.000   Reading frame       6 time   60.000   Reading frame       7 time   70.000   Reading frame       8 time   80.000   Reading frame       9 time   90.000   Reading frame      10 time  100.000   Reading frame      11 time  110.000   Reading frame      12 time  120.000   Reading frame      13 time  130.000   Reading frame      14 time  140.000   Reading frame      15 time  150.000   Reading frame      16 time  160.000   Reading frame      17 time  170.000   Reading frame      18 time  180.000   Reading frame      19 time  190.000   Reading frame      20 time  200.000   Reading frame      30 time  300.000   Reading frame      40 time  400.000   Reading frame      50 time  500.000   Reading frame      60 time  600.000   Reading frame      70 time  700.000   Reading frame      80 time  800.000   Reading frame      90 time  900.000   Reading frame     100 time 1000.000   Reading frame     110 time 1100.000   Reading frame     120 time 1200.000   Reading frame     130 time 1300.000   Reading frame     140 time 1400.000   Reading frame     150 time 1500.000   Reading frame     160 time 1600.000   Reading frame     170 time 1700.000   Reading frame     180 time 1800.000   Reading frame     190 time 1900.000   Reading frame     200 time 2000.000   Reading frame     300 time 3000.000   Reading frame     400 time 4000.000   Reading frame     500 time 5000.000   Reading frame     600 time 6000.000   Reading frame     700 time 7000.000   Reading frame     800 time 8000.000   Reading frame     900 time 9000.000   Reading frame    1000 time 10000.000   Reading frame    1100 time 11000.000   Reading frame    1200 time 12000.000   Reading frame    1300 time 13000.000   Reading frame    1400 time 14000.000   Reading frame    1500 time 15000.000   Reading frame    1600 time 16000.000   Reading frame    1700 time 17000.000   Reading frame    1800 time 18000.000   Reading frame    1900 time 19000.000   Reading frame    2000 time 20000.000   Reading frame    3000 time 30000.000   Reading frame    4000 time 40000.000   Reading frame    5000 time 50000.000   Reading frame    6000 time 60000.000   Reading frame    7000 time 70000.000   Reading frame    8000 time 80000.000   Reading frame    9000 time 90000.000   Reading frame   10000 time 100000.000   Reading frame   11000 time 110000.000   Reading frame   12000 time 120000.000   Reading frame   13000 time 130000.000   Reading frame   14000 time 140000.000   Reading frame   15000 time 150000.000   Reading frame   16000 time 160000.000   Reading frame   17000 time 170000.000   Reading frame   18000 time 180000.000   Reading frame   19000 time 190000.000   Reading frame   20000 time 200000.000   Reading frame   21000 time 210000.000   Reading frame   22000 time 220000.000   Reading frame   23000 time 230000.000   Reading frame   24000 time 240000.000   Reading frame   25000 time 250000.000   Reading frame   26000 time 260000.000   Reading frame   27000 time 270000.000   Reading frame   28000 time 280000.000   Reading frame   29000 time 290000.000   Reading frame   30000 time 300000.000   Reading frame   31000 time 310000.000   Reading frame   32000 time 320000.000   Reading frame   33000 time 330000.000   Reading frame   34000 time 340000.000   Reading frame   35000 time 350000.000   Reading frame   36000 time 360000.000   Reading frame   37000 time 370000.000   Reading frame   38000 time 380000.000   Reading frame   39000 time 390000.000   Reading frame   40000 time 400000.000   Reading frame   41000 time 410000.000   Reading frame   42000 time 420000.000   Reading frame   43000 time 430000.000   Reading frame   44000 time 440000.000   Reading frame   45000 time 450000.000   Reading frame   46000 time 460000.000   Reading frame   47000 time 470000.000   Reading frame   48000 time 480000.000   Reading frame   49000 time 490000.000   Reading frame   50000 time 500000.000   Reading frame   51000 time 510000.000   Reading frame   52000 time 520000.000   Reading frame   53000 time 530000.000   Reading frame   54000 time 540000.000   Reading frame   55000 time 550000.000   Reading frame   56000 time 560000.000   Reading frame   57000 time 570000.000   Reading frame   58000 time 580000.000   Reading frame   59000 time 590000.000   Reading frame   60000 time 600000.000   Reading frame   61000 time 610000.000   Reading frame   62000 time 620000.000   Reading frame   63000 time 630000.000   Reading frame   64000 time 640000.000   Reading frame   65000 time 650000.000   Reading frame   66000 time 660000.000   Reading frame   67000 time 670000.000   Reading frame   68000 time 680000.000   Reading frame   69000 time 690000.000   Reading frame   70000 time 700000.000   Reading frame   71000 time 710000.000   Reading frame   72000 time 720000.000   Reading frame   73000 time 730000.000   Reading frame   74000 time 740000.000   Reading frame   75000 time 750000.000   Reading frame   76000 time 760000.000   Reading frame   77000 time 770000.000   Reading frame   78000 time 780000.000   Reading frame   79000 time 790000.000   Reading frame   80000 time 800000.000   Reading frame   81000 time 810000.000   Reading frame   82000 time 820000.000   Reading frame   83000 time 830000.000   Reading frame   84000 time 840000.000   Reading frame   85000 time 850000.000   Reading frame   86000 time 860000.000   Reading frame   87000 time 870000.000   Reading frame   88000 time 880000.000   Reading frame   89000 time 890000.000   Reading frame   90000 time 900000.000   Reading frame   91000 time 910000.000   Reading frame   92000 time 920000.000   Reading frame   93000 time 930000.000   Reading frame   94000 time 940000.000   Reading frame   95000 time 950000.000   Reading frame   96000 time 960000.000   Reading frame   97000 time 970000.000   Reading frame   98000 time 980000.000   Reading frame   99000 time 990000.000   Reading frame  100000 time 1000000.000   Last frame     100000 time 1000000.000   
+
+NOTE: 34 % of the run time was spent in pair search,
+      you might want to increase nstlist (this has no effect on accuracy)
+
+               Core t (s)   Wall t (s)        (%)
+       Time:    50460.891     2102.538     2400.0
+                         35:02
+                 (ns/day)    (hour/ns)
+Performance:    41093.197        0.001
+
+GROMACS reminds you: "I never thought of stopping, and I just hated sleeping. I can't imagine having a better life." (Barbara McClintock)
+
