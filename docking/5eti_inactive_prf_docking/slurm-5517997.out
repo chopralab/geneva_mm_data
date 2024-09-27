@@ -1,0 +1,123 @@
+
+Lmod is automatically replacing "intel/17.0.1.132" with "gcc/6.3.0".
+
+
+Inactive Modules:
+  1) impi/2017.1.132
+
+8
+8
+started on Sun Oct 18 19:05:36 2020
+
+Clock is at 0.000197771
+-----------------------------------------------------------------------|
+|         CCCCC    AAA   NN   NN DDDDD    OOOOO   CCCCC  KK  KK        |
+|        CC       AAAAA  NNN  NN DD  DD  OO   OO CC      KK KK         |
+|        CC      AA   AA NN N NN DD   DD OO   OO CC      KKKK          |
+|        CC      AAAAAAA NN  NNN DD   DD OO   OO CC      KK KK         |
+|         CCCCC  AA   AA NN   NN DDDDDD   OOOO0   CCCCC  KK  KK        |
+|                                                                      |
+|                             It can-dock!                             |
+|                                                                      |
+|              Copyright 2016  Chopra Lab (chopralab.org)              |
+|                          Purdue  University                          |
+|                                                                      |
+|                      Member of the CANDIY Suite                      |
+|______________________________________________________________________|
+version 0.4.3
+4a17afdffa544a78e3640be60354d0f27e06a946 on branch HEAD
+running /depot/gchopra/apps/candock/v0.4.3_slurm/modules/../bin/v0.4.3/cd_link_fragments on hostname brown-a053.rcac.purdue.edu
+Detected support for 24 concurrent threads.
+	 Using 8 threads.
+      add_single_atoms =                                                
+             amber_xml =    /depot/gchopra/apps/candock/data/amber10.xml
+        antitarget_dir =                                                
+    antitarget_linking =                                               1
+                   bio =    /depot/gchopra/apps/candock/bslibdb/data/bio
+                 bslib =             /depot/gchopra/apps/candock/bslibdb
+       centro_clus_rad =                                               3
+              centroid =                                                
+  change_terminal_atom =                                                
+           clash_coeff =                                            0.75
+              clus_rad =                                               2
+           clusterfile =                             clustered_seeds.txt
+                  comp =                                         reduced
+             conf_spin =                                              10
+                config =                                     candock.cfg
+                  cuda =                                               0
+                cutoff =                                               6
+                  dist = /depot/gchopra/apps/candock/data/csd_complete_distance_distributions.txt
+       docked_clus_rad =                                               2
+            docked_dir =                                          docked
+     dynamic_step_size =                                               2
+         dynamic_steps =                                            1000
+              excluded =                                             0.8
+                fftype =                                              kb
+            force_seed =                                                
+          fragment_bag =                                                
+          fragment_mol =                                                
+              friction =                                              91
+                  func =                                          radial
+              gaff_dat =       /depot/gchopra/apps/candock/data/gaff.dat
+             gaff_heme =                                                
+              gaff_xml =       /depot/gchopra/apps/candock/data/gaff.xml
+                  grid =                                           0.375
+           gridpdb_hcp =                                 gridpdb_hcp.pdb
+            integrator =                                          verlet
+           interatomic =                                               8
+             iterative =                                               0
+           jiggle_seed =                                      1597463007
+                  json =                                     probis.json
+                jsonwl =                        probis_with_ligands.json
+         lig_clus_file =                             ligand_clusters.pdb
+                ligand =                                    ligands.mol2
+             link_iter =                                            1000
+   lower_tol_seed_dist =                                               2
+      max_allow_energy =                                               0
+       max_clique_size =                                               3
+       max_frag_radius =                                              16
+              max_iter =                                              10
+        max_iter_final =                                             100
+       max_num_ligands =                                              10
+     max_num_possibles =                                          200000
+     max_possible_conf =                                              -1
+              mini_tol =                                          0.0001
+                 names =  /depot/gchopra/apps/candock/bslibdb/data/names
+                  ncpu =                                               8
+                neighb =                                               0
+          new_scaffold =                                               0
+                 nosql =                                    probis.nosql
+            num_bsites =                                               3
+            num_univec =                                             256
+               obj_dir =                 /depot/gchopra/apps/candock/obj
+               pos_tol =                                           1e-11
+        potential_file =                                  potentials.txt
+                  prep =                            prepared_ligands.pdb
+       probis_clus_rad =                                               3
+        probis_min_pts =                                              10
+    probis_min_z_score =                                             2.5
+              receptor =                                    receptor.pdb
+                   ref =                                            mean
+          rmsd_crystal =                                               0
+                 scale =                                              10
+                 seeds =                                       seeds.txt
+             seeds_pdb =                                       seeds.pdb
+        seeds_till_bad =                                              -1
+       seeds_till_good =                                              -1
+          seeds_to_add =                                              50
+        seeds_to_avoid =                                              50
+                  spin =                                              60
+              srf_file =                                      probis.srf
+                  step =                                            0.01
+            target_dir =                                                
+        target_linking =                                               1
+           temperature =                                             300
+         tol_seed_dist =                                               2
+           top_percent =                                             0.2
+         top_seeds_dir =                                                
+           update_freq =                                              10
+   upper_tol_seed_dist =                                               2
+             water_xml =      /depot/gchopra/apps/candock/data/tip3p.xml
+         z_scores_file =                                    z_scores.pdb
+
+You have no seeds, cannot proceed!

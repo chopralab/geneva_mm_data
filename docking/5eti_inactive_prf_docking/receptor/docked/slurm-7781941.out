@@ -1,0 +1,116 @@
+-----------------------------------------------------------------------|
+|         CCCCC    AAA   NN   NN DDDDD    OOOOO   CCCCC  KK  KK        |
+|        CC       AAAAA  NNN  NN DD  DD  OO   OO CC      KK KK         |
+|        CC      AA   AA NN N NN DD   DD OO   OO CC      KKKK          |
+|        CC      AAAAAAA NN  NNN DD   DD OO   OO CC      KK KK         |
+|         CCCCC  AA   AA NN   NN DDDDDD   OOOO0   CCCCC  KK  KK        |
+|                                                                      |
+|                             It can-dock!                             |
+|                                                                      |
+|              Copyright 2016  Chopra Lab (chopralab.org)              |
+|                          Purdue  University                          |
+|                                                                      |
+|                      Member of the CANDIY Suite                      |
+|______________________________________________________________________|
+version 0.6.0
+2617b5075c6e3c3630e1b46a58e6029840dba51f on branch dev
+running /depot/gchopra-class/apps/candock/v0.6.0_chm579/bin/cd_calc_posescore on hostname brown-a415.rcac.purdue.edu
+Detected support for 24 concurrent threads.
+	 Using 1 threads.
+      add_single_atoms =                                                
+             amber_xml = /depot/gchopra-class/apps/candock/data/amber10.xml
+        antitarget_dir =                                                
+    antitarget_linking =                                               1
+                   bio = /depot/gchopra-class/apps/candock/bslibdb/data/bio
+                 bslib =       /depot/gchopra-class/apps/candock/bslibdb
+       centro_clus_rad =                                               3
+              centroid =                                                
+  change_terminal_atom =                                                
+           clash_coeff =                                            0.75
+              clus_rad =                                               2
+           clusterfile =                             clustered_seeds.txt
+                  comp =                                         reduced
+             conf_spin =                                              10
+                config =                                                
+                  cuda =                                               0
+                cutoff =                                              15
+                  dist = /depot/gchopra-class/apps/candock/data/csd_complete_distance_distributions.txt
+       docked_clus_rad =                                               2
+            docked_dir =                                          docked
+     dynamic_step_size =                                               2
+         dynamic_steps =                                            1000
+              excluded =                                             0.8
+                fftype =                                              kb
+            force_seed =                                                
+          fragment_bag =                                                
+          fragment_mol =                                                
+              friction =                                              91
+                  func =                            normalized_frequency
+              gaff_dat = /depot/gchopra-class/apps/candock/data/gaff.dat
+             gaff_heme =                                                
+              gaff_xml = /depot/gchopra-class/apps/candock/data/gaff.xml
+                  grid =                                           0.375
+           gridpdb_hcp =                                 gridpdb_hcp.pdb
+            integrator =                                          verlet
+           interatomic =                                               8
+             iterative =                                               0
+           jiggle_seed =                                      1597463007
+                  json =                                     probis.json
+                jsonwl =                        probis_with_ligands.json
+         lig_clus_file =                             ligand_clusters.pdb
+                ligand =                                    ligands.mol2
+             link_iter =                                            1000
+          lipinski_hbd =                                              10
+         lipinski_mass =                                             500
+          lipinski_nhs =                                               2
+          lipinski_ohs =                                               2
+   lower_tol_seed_dist =                                               2
+      max_allow_energy =                                               0
+       max_clique_size =                                               3
+       max_frag_radius =                                              16
+              max_iter =                                              10
+        max_iter_final =                                             100
+       max_num_ligands =                                              10
+     max_num_possibles =                                          200000
+     max_possible_conf =                                              -1
+              mini_tol =                                          0.0001
+                 names = /depot/gchopra-class/apps/candock/bslibdb/data/names
+                  ncpu =                                               1
+                neighb =                                               0
+          new_scaffold =                                               0
+                 nosql =                                    probis.nosql
+            num_bsites =                                               3
+            num_univec =                                             256
+               obj_dir =                                                
+               pos_tol =                                           1e-11
+        potential_file =                                  potentials.txt
+                  prep =                            prepared_ligands.pdb
+       probis_clus_rad =                                               3
+        probis_min_pts =                                              10
+    probis_min_z_score =                                             2.5
+              receptor =                                  unlabled_0.pdb
+                   ref =                                            mean
+          rmsd_crystal =                                               0
+                 scale =                                              10
+                 seeds =                                       seeds.txt
+             seeds_pdb =                                       seeds.pdb
+        seeds_till_bad =                                              -1
+       seeds_till_good =                                              -1
+          seeds_to_add =                                              50
+        seeds_to_avoid =                                              50
+                  spin =                                              60
+              srf_file =                                      probis.srf
+                  step =                                            0.01
+            target_dir =                                                
+        target_linking =                                               1
+           temperature =                                             300
+         tol_seed_dist =                                               2
+           top_percent =                                             0.2
+         top_seeds_dir =                                                
+           update_freq =                                              10
+   upper_tol_seed_dist =                                               2
+             water_xml = /depot/gchopra-class/apps/candock/data/tip3p.xml
+         z_scores_file =                                    z_scores.pdb
+
+processing combined histogram ...
+Compiling scoring function...

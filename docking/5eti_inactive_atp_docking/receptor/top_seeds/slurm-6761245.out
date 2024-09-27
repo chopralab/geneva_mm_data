@@ -1,0 +1,24 @@
+
+Lmod is automatically replacing "intel/17.0.1.132" with "gcc/6.3.0".
+
+
+Inactive Modules:
+  1) impi/2017.1.132
+
+/depot/gchopra/apps/candiy_rice/modules/rescore_all.sh: line 39: 56337 Segmentation fault      $MCANDOCK_MOD_PATH/../bin/stch all_score_pose --dist $MCANDOCK_MOD_PATH/../data/csd_complete_distance_distributions.txt.xz -c $1
+
+Lmod is automatically replacing "intel/17.0.1.132" with "gcc/6.3.0".
+
+
+Inactive Modules:
+  1) impi/2017.1.132
+
+/depot/gchopra/apps/candiy_rice/modules/rescore_all.sh: line 39: 56443 Segmentation fault      $MCANDOCK_MOD_PATH/../bin/stch all_score_pose --dist $MCANDOCK_MOD_PATH/../data/csd_complete_distance_distributions.txt.xz -c $1
+
+Lmod is automatically replacing "intel/17.0.1.132" with "gcc/6.3.0".
+
+
+Inactive Modules:
+  1) impi/2017.1.132
+
+/depot/gchopra/apps/candiy_rice/modules/rescore_all.sh: line 39: 56699 Segmentation fault      $MCANDOCK_MOD_PATH/../bin/stch all_score_pose --dist $MCANDOCK_MOD_PATH/../data/csd_complete_distance_distributions.txt.xz -c $1
