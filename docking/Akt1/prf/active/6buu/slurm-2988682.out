@@ -1,0 +1,694 @@
+20
+20
+started on Mon May 17 17:47:44 2021
+
+Clock is at 0.000168927
+-----------------------------------------------------------------------|
+|         CCCCC    AAA   NN   NN DDDDD    OOOOO   CCCCC  KK  KK        |
+|        CC       AAAAA  NNN  NN DD  DD  OO   OO CC      KK KK         |
+|        CC      AA   AA NN N NN DD   DD OO   OO CC      KKKK          |
+|        CC      AAAAAAA NN  NNN DD   DD OO   OO CC      KK KK         |
+|         CCCCC  AA   AA NN   NN DDDDDD   OOOO0   CCCCC  KK  KK        |
+|                                                                      |
+|                             It can-dock!                             |
+|                                                                      |
+|              Copyright 2016  Chopra Lab (chopralab.org)              |
+|                          Purdue  University                          |
+|                                                                      |
+|                      Member of the CANDIY Suite                      |
+|______________________________________________________________________|
+version 0.4.3
+4a17afdffa544a78e3640be60354d0f27e06a946 on branch HEAD
+running /depot/gchopra/apps/candock/v0.4.3_slurm/modules/../bin/v0.4.3/cd_link_fragments on hostname bell-a411.rcac.purdue.edu
+Detected support for 128 concurrent threads.
+	 Using 20 threads.
+      add_single_atoms =                                                
+             amber_xml =    /depot/gchopra/apps/candock/data/amber10.xml
+        antitarget_dir =                                                
+    antitarget_linking =                                               1
+                   bio =    /depot/gchopra/apps/candock/bslibdb/data/bio
+                 bslib =             /depot/gchopra/apps/candock/bslibdb
+       centro_clus_rad =                                               3
+              centroid =                                                
+  change_terminal_atom =                                                
+           clash_coeff =                                            0.75
+              clus_rad =                                               2
+           clusterfile =                             clustered_seeds.txt
+                  comp =                                         reduced
+             conf_spin =                                              10
+                config =                                                
+                  cuda =                                               0
+                cutoff =                                               6
+                  dist = /depot/gchopra/apps/candock/data/csd_complete_distance_distributions.txt
+       docked_clus_rad =                                               2
+            docked_dir =                                          docked
+     dynamic_step_size =                                               2
+         dynamic_steps =                                            1000
+              excluded =                                             0.8
+                fftype =                                              kb
+            force_seed =                                                
+          fragment_bag =                                                
+          fragment_mol =                                                
+              friction =                                              91
+                  func =                                          radial
+              gaff_dat =       /depot/gchopra/apps/candock/data/gaff.dat
+             gaff_heme =                                                
+              gaff_xml =       /depot/gchopra/apps/candock/data/gaff.xml
+                  grid =                                           0.375
+           gridpdb_hcp =                                 gridpdb_hcp.pdb
+            integrator =                                          verlet
+           interatomic =                                               8
+             iterative =                                               0
+           jiggle_seed =                                      1597463007
+                  json =                                     probis.json
+                jsonwl =                        probis_with_ligands.json
+         lig_clus_file =                             ligand_clusters.pdb
+                ligand =                                    ligands.mol2
+             link_iter =                                            1000
+   lower_tol_seed_dist =                                               2
+      max_allow_energy =                                               0
+       max_clique_size =                                               3
+       max_frag_radius =                                              16
+              max_iter =                                              10
+        max_iter_final =                                             100
+       max_num_ligands =                                              10
+     max_num_possibles =                                          200000
+     max_possible_conf =                                              -1
+              mini_tol =                                          0.0001
+                 names =  /depot/gchopra/apps/candock/bslibdb/data/names
+                  ncpu =                                              20
+                neighb =                                               0
+          new_scaffold =                                               0
+                 nosql =                                    probis.nosql
+            num_bsites =                                               3
+            num_univec =                                             256
+               obj_dir =                 /depot/gchopra/apps/candock/obj
+               pos_tol =                                           1e-11
+        potential_file =                                  potentials.txt
+                  prep =                            prepared_ligands.pdb
+       probis_clus_rad =                                               3
+        probis_min_pts =                                              10
+    probis_min_z_score =                                             2.5
+              receptor =                                    receptor.pdb
+                   ref =                                            mean
+          rmsd_crystal =                                               0
+                 scale =                                              10
+                 seeds =                                       seeds.txt
+             seeds_pdb =                                       seeds.pdb
+        seeds_till_bad =                                              -1
+       seeds_till_good =                                              -1
+          seeds_to_add =                                              50
+        seeds_to_avoid =                                              50
+                  spin =                                              60
+              srf_file =                                      probis.srf
+                  step =                                            0.01
+            target_dir =                                                
+        target_linking =                                               1
+           temperature =                                             300
+         tol_seed_dist =                                               2
+           top_percent =                                            0.05
+         top_seeds_dir =                                                
+           update_freq =                                              10
+   upper_tol_seed_dist =                                               2
+             water_xml =      /depot/gchopra/apps/candock/data/tip3p.xml
+         z_scores_file =                                    z_scores.pdb
+
+Fragmenting files in ligands.mol2
+Running PROBIS for receptor in file: receptor.pdb
+Starting ProBiS for binding sites prediction
+--- Complete proteins' search ---
+MODIFIERS USED: local longnames 
+PARAMETERS USED - To modify, copy rows between the
+dashed lines to a separate input parameter file -
+----------------------------------------------------------
+NCPU		                20
+SRF_FILE                /scratch/bell/gwijewar/Akt1/prf/active/6buu/receptor/probis.srf
+PROTEIN1                /scratch/bell/gwijewar/Akt1/prf/active/6buu/receptor.pdb
+PROTEIN2                
+CHAIN1                  A
+CHAIN2                  
+INTER_CHAIN_DIST        3
+SURF_FILE               bslibdb/bslib.txt
+INDIR                   
+OUTDIR                  
+SPACING                 3
+PROBE                   1.4
+MAXR                    1.8
+CATOM                   1.5
+NATOM                   1.45
+OATOM                   1.35
+SATOM                   1.7
+HATOM                   1
+EPS                     0.001
+SURF                    1.1
+DESC_PROBE_DIST         3
+BFACTOR                 0.8
+POP_MEAN                1.958
+POP_SD                  2.21468
+NFP                     0.25
+SITE_RMSD               3 *
+RESOLUTION              2
+OGA                     1
+OGB                     1
+OGC                     1
+OGV                     2
+THRMSD                  1.2
+CUTOFF_FIRST            9
+CUTOFF_SECOND           15
+NORM_EPS                1e-08
+MAX_VERTICES            20000 *
+MATRIX_CUTOFF           0.2
+VECTOR_CUTOFF           2
+RMSD_INCR               0.5
+RMSD_INCR_ADD           0.6
+WORD                    32 *
+CLIQUE_TLIMIT           1
+CLUS_SPEC               5
+CLUS_TO_OUTPUT          5
+SCONS                   4
+ALIGNMENT_NO            0
+BLOSUM                  blosum80
+MOTIF1                  
+MOTIF2                  
+BSITE1                  
+BSITE2                  
+SURF_VECTOR_ANGLE       1.5708
+BLOSUM_SCORE            10000
+CALPHA_RMSD             3
+K                       0.17
+LAMBDA                  0.343
+Z_SCORE                 1
+Z_SCORE_CONS            2
+Z_SCORE_FP              3
+GLOBAL_DIST             10
+GLOBAL_SVAL             23
+GLOBAL_ANGLE            0.7854
+LIG_NEIGHB             2
+PP_DIST                10
+SL_DIST                8
+NU_DIST                10
+IO_DIST                5
+NCLTRIES               100
+NMOL                   0
+LIGDIR                 
+NOSQL_FILE             /scratch/bell/gwijewar/Akt1/prf/active/6buu/receptor/probis.nosql
+JSON_FILE              /scratch/bell/gwijewar/Akt1/prf/active/6buu/receptor/probis.json
+----------------------------------------------------------
+(*) These parameters cannot be changed.
+Setting descriptors ...
+THREAD> Initializing thread 0
+THREAD> Initializing thread 1
+THREAD> Initializing thread 2
+THREAD> Initializing thread 3
+THREAD> Initializing thread 4
+THREAD> Initializing thread 5
+THREAD> Initializing thread 6
+THREAD> Initializing thread 7
+THREAD> Initializing thread 8
+THREAD> Initializing thread 9
+THREAD> Initializing thread 10
+THREAD> Initializing thread 11
+THREAD> Initializing thread 12
+THREAD> Initializing thread 13
+THREAD> Initializing thread 14
+THREAD> Initializing thread 15
+THREAD> Initializing thread 16
+THREAD> Initializing thread 17
+THREAD> Initializing thread 18
+THREAD> Initializing thread 19
+Error (MOLECULE) : Defect SRF file /scratch/bell/gwijewar/Akt1/prf/active/6buu/receptor/probis.srf.
+Error (MOLECULE) : Defect SRF file /scratch/bell/gwijewar/Akt1/prf/active/6buu/receptor/probis.srf.
+Error (MOLECULE) : Defect SRF file /scratch/bell/gwijewar/Akt1/prf/active/6buu/receptor/probis.srf.Error (MOLECULE) : Defect SRF file /scratch/bell/gwijewar/Akt1/prf/active/6buu/receptor/probis.srf.Error (MOLECULE) : Defect SRF file /scratch/bell/gwijewar/Akt1/prf/active/6buu/receptor/probis.srf.
+
+Error (MOLECULE) : Defect SRF file /scratch/bell/gwijewar/Akt1/prf/active/6buu/receptor/probis.srf.
+Error (MOLECULE) : Defect SRF file /scratch/bell/gwijewar/Akt1/prf/active/6buu/receptor/probis.srf.
+Error (MOLECULE) : Defect SRF file /scratch/bell/gwijewar/Akt1/prf/active/6buu/receptor/probis.srf.
+Error (MOLECULE) : Defect SRF file /scratch/bell/gwijewar/Akt1/prf/active/6buu/receptor/probis.srf.
+Error (MOLECULE) : Defect SRF file /scratch/bell/gwijewar/Akt1/prf/active/6buu/receptor/probis.srf.
+Error (MOLECULE) : Defect SRF file /scratch/bell/gwijewar/Akt1/prf/active/6buu/receptor/probis.srf.
+Error (MOLECULE) : Defect SRF file /scratch/bell/gwijewar/Akt1/prf/active/6buu/receptor/probis.srf.
+Error (MOLECULE) : Defect SRF file /scratch/bell/gwijewar/Akt1/prf/active/6buu/receptor/probis.srf.
+Error (MOLECULE) : Defect SRF file /scratch/bell/gwijewar/Akt1/prf/active/6buu/receptor/probis.srf.
+
+Error (MOLECULE) : Defect SRF file /scratch/bell/gwijewar/Akt1/prf/active/6buu/receptor/probis.srf.
+Error (MOLECULE) : Defect SRF file /scratch/bell/gwijewar/Akt1/prf/active/6buu/receptor/probis.srf.
+Error (MOLECULE) : Defect SRF file /scratch/bell/gwijewar/Akt1/prf/active/6buu/receptor/probis.srf.
+Error (MOLECULE) : Defect SRF file /scratch/bell/gwijewar/Akt1/prf/active/6buu/receptor/probis.srf.
+Error (MOLECULE) : Defect SRF file /scratch/bell/gwijewar/Akt1/prf/active/6buu/receptor/probis.srf.
+Error (MOLECULE) : Defect SRF file /scratch/bell/gwijewar/Akt1/prf/active/6buu/receptor/probis.srf.
+*** Error in `/depot/gchopra/apps/candock/v0.4.3_slurm/modules/../bin/v0.4.3/cd_link_fragments': free(): invalid pointer: 0x00002b6668081db0 ***
+*** Error in `/depot/gchopra/apps/candock/v0.4.3_slurm/modules/../bin/v0.4.3/cd_link_fragments': free(): invalid pointer: 0x00002b667c000818 ***
+*** Error in `/depot/gchopra/apps/candock/v0.4.3_slurm/modules/../bin/v0.4.3/cd_link_fragments': free(): invalid pointer: 0x00002b6644000818 ***
+*** Error in `/depot/gchopra/apps/candock/v0.4.3_slurm/modules/../bin/v0.4.3/cd_link_fragments': free(): invalid pointer: 0x00002b6648000818 ***
+======= Backtrace: =========
+======= Backtrace: =========
+======= Backtrace: =========
+======= Backtrace: =========
+/lib64/libc.so.6(+0x81299)[0x2b6628e3e299]
+/lib64/libc.so.6(+0x81299)[0x2b6628e3e299]
+/lib64/libc.so.6(+0x81299)[0x2b6628e3e299]
+/lib64/libc.so.6(+0x81299)[0x2b6628e3e299]
+/depot/gchopra/apps/candock/lib/v0.4.3/libcandock.so(_ZN4GridD2Ev+0x74)[0x2b6626d52254]
+/depot/gchopra/apps/candock/lib/v0.4.3/libcandock.so(_ZN4GridD2Ev+0x74)[0x2b6626d52254]
+/depot/gchopra/apps/candock/lib/v0.4.3/libcandock.so(_ZN4GridD2Ev+0x74)[0x2b6626d52254]
+/depot/gchopra/apps/candock/lib/v0.4.3/libcandock.so(_ZN4GridD2Ev+0x74)[0x2b6626d52254]
+/depot/gchopra/apps/candock/lib/v0.4.3/libcandock.so(_Z6state0RN5NoSql11WriteStructESsSs+0x126a)[0x2b6626d96c6a]
+/depot/gchopra/apps/candock/lib/v0.4.3/libcandock.so(_Z6state0RN5NoSql11WriteStructESsSs+0x126a)[0x2b6626d96c6a]
+/depot/gchopra/apps/candock/lib/v0.4.3/libcandock.so(_Z6state0RN5NoSql11WriteStructESsSs+0x126a)[0x2b6626d96c6a]
+/depot/gchopra/apps/candock/lib/v0.4.3/libcandock.so(_Z6state0RN5NoSql11WriteStructESsSs+0x126a)[0x2b6626d96c6a]
+/depot/gchopra/apps/candock/lib/v0.4.3/libcandock.so(_Z6state0SsSs+0x68)[0x2b6626d971e8]
+/depot/gchopra/apps/candock/lib/v0.4.3/libcandock.so(_Z6state0SsSs+0x68)[0x2b6626d971e8]
+/depot/gchopra/apps/candock/lib/v0.4.3/libcandock.so(_Z6state0SsSs+0x68)[0x2b6626d971e8]
+/depot/gchopra/apps/candock/lib/v0.4.3/libcandock.so(_Z6state0SsSs+0x68)[0x2b6626d971e8]
+/depot/gchopra/apps/candock/lib/v0.4.3/libcandock.so(+0x44b907)[0x2b6626d97907]
+/depot/gchopra/apps/candock/lib/v0.4.3/libcandock.so(+0x44b907)[0x2b6626d97907]
+/depot/gchopra/apps/candock/lib/v0.4.3/libcandock.so(+0x44b907)[0x2b6626d97907]
+/depot/gchopra/apps/candock/lib/v0.4.3/libcandock.so(+0x471b60)[0x2b6626dbdb60]
+/depot/gchopra/apps/candock/lib/v0.4.3/libcandock.so(+0x44b907)[0x2b6626d97907]
+/depot/gchopra/apps/candock/lib/v0.4.3/libcandock.so(+0x471b60)[0x2b6626dbdb60]
+/lib64/libpthread.so.0(+0x7ea5)[0x2b6627048ea5]
+/depot/gchopra/apps/candock/lib/v0.4.3/libcandock.so(+0x471b60)[0x2b6626dbdb60]
+/lib64/libpthread.so.0(+0x7ea5)[0x2b6627048ea5]
+/lib64/libpthread.so.0(+0x7ea5)[0x2b6627048ea5]
+/depot/gchopra/apps/candock/lib/v0.4.3/libcandock.so(+0x471b60)[0x2b6626dbdb60]
+/lib64/libc.so.6(clone+0x6d)[0x2b6628ebb8dd]
+======= Memory map: ========
+/lib64/libc.so.6(clone+0x6d)[0x2b6628ebb8dd]
+00400000-0041b000 r-xp 00000000 00:30 694536664                          /depot-old/gchopra/apps/candock/v0.4.3_slurm/bin/v0.4.3/cd_link_fragments
+0061b000-0061c000 rw-p 0001b000 00:30 694536664                          /depot-old/gchopra/apps/candock/v0.4.3_slurm/bin/v0.4.3/cd_link_fragments
+0087a000-013d0000 rw-p 00000000 00:00 0                                  [heap]
+3358a00000-3358bea000 r-xp 00000000 00:30 434590689                      /depot-old/gchopra/apps/candock/lib/v0.4.3/libgsl.so.0
+3358bea000-3358de9000 ---p 001ea000 00:30 434590689                      /depot-old/gchopra/apps/candock/lib/v0.4.3/libgsl.so.0
+3358de9000-3358df7000 rw-p 001e9000 00:30 434590689                      /depot-old/gchopra/apps/candock/lib/v0.4.3/libgsl.so.0
+3359200000-3359237000 r-xp 00000000 00:30 434590695                      /depot-old/gchopra/apps/candock/lib/v0.4.3/libgslcblas.so.0
+3359237000-3359436000 ---p 00037000 00:30 434590695                      /depot-old/gchopra/apps/candock/lib/v0.4.3/libgslcblas.so.0
+/lib64/libc.so.6(clone+0x6d)[0x2b6628ebb8dd]
+3359436000-3359437000 rw-p 00036000 00:30 434590695                      /depot-old/gchopra/apps/candock/lib/v0.4.3/libgslcblas.so.0
+2b6626728000-2b662674a000 r-xp 00000000 00:24 77261                      /usr/lib64/ld-2.17.so
+2b662674a000-2b662674e000 rw-p 00000000 00:00 0 
+2b662674f000-2b6626750000 rw-p 00000000 00:00 0 
+2b6626762000-2b6626772000 rw-p 00000000 00:00 0 
+2b6626949000-2b662694a000 r--p 00021000 00:24 77261                      /usr/lib64/ld-2.17.so
+2b662694a000-2b662694b000 rw-p 00022000 00:24 77261                      /usr/lib64/ld-2.17.so
+2b662694b000-2b662694c000 rw-p 00000000 00:00 0 
+2b662694c000-2b6626e2a000 r-xp 00000000 00:30 117683270                  /depot-old/gchopra/apps/candock/lib/v0.4.3/libcandock.so
+2b6626e2a000-2b662702a000 ---p 004de000 00:30 117683270                  /depot-old/gchopra/apps/candock/lib/v0.4.3/libcandock.so
+2b662702a000-2b6627035000 rw-p 004de000 00:30 117683270                  /depot-old/gchopra/apps/candock/lib/v0.4.3/libcandock.so
+2b6627035000-2b66270/lib64/libpthread.so.0(+0x7ea5)[0x2b6627048ea5]
+======= Memory map: ========
+======= Memory map: ========
+00400000-0041b000 r-xp 00000000 00:30 694536664                          /depot-old/gchopra/apps/candock/v0.4.3_slurm/bin/v0.4.3/cd_link_fragments
+0061b000-0061c000 rw-p 0001b000 00:30 694536664                          /depot-old/gchopra/apps/candock/v0.4.3_slurm/bin/v0.4.3/cd_link_fragments
+0087a000-013d0000 rw-p 00000000 00:00 0                                  [heap]
+3358a00000-3358bea000 r-xp 00000000 00:30 434590689                      /depot-old/gchopra/apps/candock/lib/v0.4.3/libgsl.so.0
+3358bea000-3358de9000 ---p 001ea000 00:30 434590689                      /depot-old/gchopra/apps/candock/lib/v0.4.3/libgsl.so.0
+3358de9000-3358df7000 rw-p 001e9000 00:30 434590689                      /depot-old/gchopra/apps/candock/lib/v0.4.3/libgsl.so.0
+3359200000-3359237000 r-xp 00000000 00:30 434590695                      /depot-old/gchopra/apps/candock/lib/v0.4.3/libgslcblas.so.0
+3359237000-3359436000 ---p 00037000 00:30 434590695                      /depot-old/gchopra/apps/candock/lib/v0.4.3/libgslcblas.so.0
+41000 rw-p 00000000 00:00 0 
+2b6627041000-2b6627058000 r-xp 00000000 00:24 77759                      /usr/lib64/libpthread-2.17.so
+2b6627058000-2b6627257000 ---p 00017000 00:24 77759                      /usr/lib64/libpthread-2.17.so
+2b6627257000-2b6627258000 r--p 00016000 00:24 77759                      /usr/lib64/libpthread-2.17.so
+2b6627258000-2b6627259000 rw-p 00017000 00:24 77759                      /usr/lib64/libpthread-2.17.so
+2b6627259000-2b662725d000 rw-p 00000000 00:00 0 
+2b662725d000-2b662725f000 r-xp 00000000 00:24 77554                      /usr/lib64/libdl-2.17.so
+2b662725f000-2b662745f000 ---p 00002000 00:24 77554                      /usr/lib64/libdl-2.17.so
+2b662745f000-2b6627460000 r--p 00002000 00:24 77554                      /usr/lib64/libdl-2.17.so
+2b6627460000-2b6627461000 rw-p 00003000 00:24 77554                      /usr/lib64/libdl-2.17.so
+2b6627461000-2b66276fa000 r-xp 00000000 00:30 117719065                  /depot-old/gchopra/apps/openmm/lib/libOpenMM.so
+2b66276fa000-2b66278f/lib64/libc.so.6(clone+0x6d)[0x2b6628ebb8dd]
+======= Memory map: ========
+00400000-0041b000 r-xp 00000000 00:30 694536664                          /depot-old/gchopra/apps/candock/v0.4.3_slurm/bin/v0.4.3/cd_link_fragments
+0061b000-0061c000 rw-p 0001b000 00:30 694536664                          /depot-old/gchopra/apps/candock/v0.4.3_slurm/bin/v0.4.3/cd_link_fragments
+0087a000-013d0000 rw-p 00000000 00:00 0                                  [heap]
+3358a00000-3358bea000 r-xp 00000000 00:30 434590689                      /depot-old/gchopra/apps/candock/lib/v0.4.3/libgsl.so.0
+3358bea000-3358de9000 ---p 001ea000 00:30 434590689                      /depot-old/gchopra/apps/candock/lib/v0.4.3/libgsl.so.0
+3358de9000-3358df7000 rw-p 001e9000 00:30 434590689                      /depot-old/gchopra/apps/candock/lib/v0.4.3/libgsl.so.0
+3359200000-3359237000 r-xp 00000000 00:30 434590695                      /depot-old/gchopra/apps/candock/lib/v0.4.3/libgslcblas.so.0
+3359237000-3359436000 ---p 00037000 00:30 434590695                      /depot-old/gchopra/apps/candock/lib/v0.4.3/libgslcblas.so.0
+00400000-0041b000 r-xp 00000000 00:30 694536664                          /depot-old/gchopra/apps/candock/v0.4.3_slurm/bin/v0.4.3/cd_link_fragments
+0061b000-0061c000 rw-p 0001b000 00:30 694536664                          /depot-old/gchopra/apps/candock/v0.4.3_slurm/bin/v0.4.3/cd_link_fragments
+0087a000-013d0000 rw-p 00000000 00:00 0                                  [heap]
+3358a00000-3358bea000 r-xp 00000000 00:30 434590689                      /depot-old/gchopra/apps/candock/lib/v0.4.3/libgsl.so.0
+3358bea000-3358de9000 ---p 001ea000 00:30 434590689                      /depot-old/gchopra/apps/candock/lib/v0.4.3/libgsl.so.0
+3358de9000-3358df7000 rw-p 001e9000 00:30 434590689                      /depot-old/gchopra/apps/candock/lib/v0.4.3/libgsl.so.0
+3359200000-3359237000 r-xp 00000000 00:30 434590695                      /depot-old/gchopra/apps/candock/lib/v0.4.3/libgslcblas.so.0
+3359237000-3359436000 ---p 00037000 00:30 434590695                      /depot-old/gchopra/apps/candock/lib/v0.4.3/libgslcblas.so.0
+3359436000-3359437000 rw-p 00036000 00:30 434590695                      /depot-old/gchopra/apps/candock/lib/v0.4.3/libgslcblas.so.0
+2b6626728000-2b662674a000 r-xp 00000000 00:24 77261                      /usr/lib64/ld-2.17.so
+2b662674a000-2b662674e000 rw-p 00000000 00:00 0 
+2b662674f000-2b6626750000 rw-p 00000000 00:00 0 
+2b6626762000-2b6626772000 rw-p 00000000 00:00 0 
+2b6626949000-2b662694a000 r--p 00021000 00:24 77261                      /usr/lib64/ld-2.17.so
+2b662694a000-2b662694b000 rw-p 00022000 00:24 77261                      /usr/lib64/ld-2.17.so
+2b662694b000-2b662694c000 rw-p 00000000 00:00 0 
+2b662694c000-2b6626e2a000 r-xp 00000000 00:30 117683270                  /depot-old/gchopra/apps/candock/lib/v0.4.3/libcandock.so
+2b6626e2a000-2b662702a000 ---p 004de000 00:30 117683270                  /depot-old/gchopra/apps/candock/lib/v0.4.3/libcandock.so
+2b662702a000-2b6627035000 rw-p 004de000 00:30 117683270                  /depot-old/gchopra/apps/candock/lib/v0.4.3/libcandock.so
+2b6627035000-2b662703359436000-3359437000 rw-p 00036000 00:30 434590695                      /depot-old/gchopra/apps/candock/lib/v0.4.3/libgslcblas.so.0
+2b6626728000-2b662674a000 r-xp 00000000 00:24 77261                      /usr/lib64/ld-2.17.so
+2b662674a000-2b662674e000 rw-p 00000000 00:00 0 
+2b662674f000-2b6626750000 rw-p 00000000 00:00 0 
+2b6626762000-2b6626772000 rw-p 00000000 00:00 0 
+2b6626949000-2b662694a000 r--p 00021000 00:24 77261                      /usr/lib64/ld-2.17.so
+2b662694a000-2b662694b000 rw-p 00022000 00:24 77261                      /usr/lib64/ld-2.17.so
+2b662694b000-2b662694c000 rw-p 00000000 00:00 0 
+2b662694c000-2b6626e2a000 r-xp 00000000 00:30 117683270                  /depot-old/gchopra/apps/candock/lib/v0.4.3/libcandock.so
+2b6626e2a000-2b662702a000 ---p 004de000 00:30 117683270                  /depot-old/gchopra/apps/candock/lib/v0.4.3/libcandock.so
+2b662702a000-2b6627035000 rw-p 004de000 00:30 117683270                  /depot-old/gchopra/apps/candock/lib/v0.4.3/libcandock.so
+2b6627035000-2b6627041000 rw-p 00000000 00:00 0 
+2b6627041000-2b6627058000 r-xp 00000000 00:24 77759                      /usr/lib64/libpthread-2.17.so
+2b6627058000-2b6627257000 ---p 00017000 00:24 77759                      /usr/lib64/libpthread-2.17.so
+2b6627257000-2b6627258000 r--p 00016000 00:24 77759                      /usr/lib64/libpthread-2.17.so
+2b6627258000-2b6627259000 rw-p 00017000 00:24 77759                      /usr/lib64/libpthread-2.17.so
+2b6627259000-2b662725d000 rw-p 00000000 00:00 0 
+2b662725d000-2b662725f000 r-xp 00000000 00:24 77554                      /usr/lib64/libdl-2.17.so
+2b662725f000-2b662745f000 ---p 00002000 00:24 77554                      /usr/lib64/libdl-2.17.so
+2b662745f000-2b6627460000 r--p 00002000 00:24 77554                      /usr/lib64/libdl-2.17.so
+2b6627460000-2b6627461000 rw-p 00003000 00:24 77554                      /usr/lib64/libdl-2.17.so
+2b6627461000-2b66276fa000 r-xp 00000000 00:30 117719065                  /depot-old/gchopra/apps/openmm/lib/libOpenMM.so
+2b66276fa000-2b66278f41000 rw-p 00000000 00:00 0 
+2b6627041000-2b6627058000 r-xp 00000000 00:24 77759                      /usr/lib64/libpthread-2.17.so
+2b6627058000-2b6627257000 ---p 00017000 00:24 77759                      /usr/lib64/libpthread-2.17.so
+2b6627257000-2b6627258000 r--p 00016000 00:24 77759                      /usr/lib64/libpthread-2.17.so
+2b6627258000-2b6627259000 rw-p 00017000 00:24 77759                      /usr/lib64/libpthread-2.17.so
+2b6627259000-2b662725d000 rw-p 00000000 00:00 0 
+2b662725d000-2b662725f000 r-xp 00000000 00:24 77554                      /usr/lib64/libdl-2.17.so
+2b662725f000-2b662745f000 ---p 00002000 00:24 77554                      /usr/lib64/libdl-2.17.so
+2b662745f000-2b6627460000 r--p 00002000 00:24 77554                      /usr/lib64/libdl-2.17.so
+2b6627460000-2b6627461000 rw-p 00003000 00:24 77554                      /usr/lib64/libdl-2.17.so
+2b6627461000-2b66276fa000 r-xp 00000000 00:30 117719065                  /depot-old/gchopra/apps/openmm/lib/libOpenMM.so
+2b66276fa000-2b66278fa000 ---p 00299000 00:30 117719065                  /depot-old/gchopra/apps/openmm/lib/libOpenMM.so
+2b66278fa000-2b6627905000 rw-p 00299000 00:30 117719065                  /depot-old/gchopra/apps/openmm/lib/libOpenMM.so
+2b6627905000-2b6627906000 rw-p 00000000 00:00 0 
+2b6627906000-2b662790c000 r-xp 00000000 00:30 33892592                   /depot-old/gchopra/apps/openmm/lib/libKBPlugin.so
+2b662790c000-2b6627b0b000 ---p 00006000 00:30 33892592                   /depot-old/gchopra/apps/openmm/lib/libKBPlugin.so
+2b6627b0b000-2b6627b0c000 rw-p 00005000 00:30 33892592                   /depot-old/gchopra/apps/openmm/lib/libKBPlugin.so
+2b6627b0c000-2b6627b34000 r-xp 00000000 00:30 117193111                  /depot-old/gchopra/apps/candock/lib/ext/libboost_filesystem.so.1.64.0
+2b6627b34000-2b6627d33000 ---p 00028000 00:30 117193111                  /depot-old/gchopra/apps/candock/lib/ext/libboost_filesystem.so.1.64.0
+2b6627d33000-2b6627d35000 rw-p 00027000 00:30 117193111                  /depot-old/gchopra/apps/caa000 ---p 00299000 00:30 117719065                  /depot-old/gchopra/apps/openmm/lib/libOpenMM.so
+2b66278fa000-2b6627905000 rw-p 00299000 00:30 117719065                  /depot-old/gchopra/apps/openmm/lib/libOpenMM.so
+2b6627905000-2b6627906000 rw-p 00000000 00:00 0 
+2b6627906000-2b662790c000 r-xp 00000000 00:30 33892592                   /depot-old/gchopra/apps/openmm/lib/libKBPlugin.so
+2b662790c000-2b6627b0b000 ---p 00006000 00:30 33892592                   /depot-old/gchopra/apps/openmm/lib/libKBPlugin.so
+2b6627b0b000-2b6627b0c000 rw-p 00005000 00:30 33892592                   /depot-old/gchopra/apps/openmm/lib/libKBPlugin.so
+2b6627b0c000-2b6627b34000 r-xp 00000000 00:30 117193111                  /depot-old/gchopra/apps/candock/lib/ext/libboost_filesystem.so.1.64.0
+2b6627b34000-2b6627d33000 ---p 00028000 00:30 117193111                  /depot-old/gchopra/apps/candock/lib/ext/libboost_filesystem.so.1.64.0
+2b6627d33000-2b6627d35000 rw-p 00027000 00:30 117193111                  /depot-old/gchopra/apps/candock/lib/ext/libboost_filesystem.so.1.64.0
+2b6627d35000-2b6627d38000 r-xp 00000000 00:30 117193115                  /depot-old/gchopra/apps/candock/lib/ext/libboost_system.so.1.64.0
+2b6627d38000-2b6627f37000 ---p 00003000 00:30 117193115                  /depot-old/gchopra/apps/candock/lib/ext/libboost_system.so.1.64.0
+2b6627f37000-2b6627f38000 rw-p 00002000 00:30 117193115                  /depot-old/gchopra/apps/candock/lib/ext/libboost_system.so.1.64.0
+2b6627f38000-2b6628036000 r-xp 00000000 00:30 117193114                  /depot-old/gchopra/apps/candock/lib/ext/libboost_regex.so.1.64.0
+2b6628036000-2b6628236000 ---p 000fe000 00:30 117193114                  /depot-old/gchopra/apps/candock/lib/ext/libboost_regex.so.1.64.0
+2b6628236000-2b662823c000 rw-p 000fe000 00:30 117193114                  /depot-old/gchopra/apps/candock/lib/ext/libboost_regex.so.1.64.0
+2b662823c000-2b66282c6000 r-xp 00000000 00:30 117193113                  /depot-old/gchopra/apps/candock/lib/ext/libboost_program_options.so.1.64.0
+2ndock/lib/ext/libboost_filesystem.so.1.64.0
+2b6627d35000-2b6627d38000 r-xp 00000000 00:30 117193115                  /depot-old/gchopra/apps/candock/lib/ext/libboost_system.so.1.64.0
+2b6627d38000-2b6627f37000 ---p 00003000 00:30 117193115                  /depot-old/gchopra/apps/candock/lib/ext/libboost_system.so.1.64.0
+2b6627f37000-2b6627f38000 rw-p 00002000 00:30 117193115                  /depot-old/gchopra/apps/candock/lib/ext/libboost_system.so.1.64.0
+2b6627f38000-2b6628036000 r-xp 00000000 00:30 117193114                  /depot-old/gchopra/apps/candock/lib/ext/libboost_regex.so.1.64.0
+2b6628036000-2b6628236000 ---p 000fe000 00:30 117193114                  /depot-old/gchopra/apps/candock/lib/ext/libboost_regex.so.1.64.0
+2b6628236000-2b662823c000 rw-p 000fe000 00:30 117193114                  /depot-old/gchopra/apps/candock/lib/ext/libboost_regex.so.1.64.0
+2b662823c000-2b66282c6000 r-xp 00000000 00:30 117193113                  /depot-old/gchopra/apps/candock/lib/ext/libboost_program_options.so.1.64.0
+2b66282c6000-2b66284c5000 ---p 0008a000 00:30 117193113                  /depot-old/gchopra/apps/candock/lib/ext/libboost_program_options.so.1.64.0
+2b66284c5000-2b66284c9000 rw-p 00089000 00:30 117193113                  /depot-old/gchopra/apps/candock/lib/ext/libboost_program_options.so.1.64.0
+2b66284c9000-2b6628692000 r-xp 00000000 00:2f 6737999                    /apps/spack/bell/apps/gcc/9.3.0-gcc-4.8.5-z2ug7z7/lib64/libstdc++.so.6.0.28
+2b6628692000-2b6628892000 ---p 001c9000 00:2f 6737999                    /apps/spack/bell/apps/gcc/9.3.0-gcc-4.8.5-z2ug7z7/lib64/libstdc++.so.6.0.28
+2b6628892000-2b662889d000 r--p 001c9000 00:2f 6737999                    /apps/spack/bell/apps/gcc/9.3.0-gcc-4.8.5-z2ug7z7/lib64/libstdc++.so.6.0.28
+2b662889d000-2b66288a0000 rw-p 001d4000 00:2f 6737999                    /apps/spack/bell/apps/gcc/9.3.0-gcc-4.8.5-z2ug7z7/lib64/libstdc++.so.6.0.28
+2b66288a0000-2b66288a3000 rw-p 00000000 00:00 0 
+2b66288a3000-2b66289a4000 r-xp 00000000 00:24 77558                      /usr/lib64/b66282c6000-2b66284c5000 ---p 0008a000 00:30 117193113                  /depot-old/gchopra/apps/candock/lib/ext/libboost_program_options.so.1.64.0
+2b66284c5000-2b66284c9000 rw-p 00089000 00:30 117193113                  /depot-old/gchopra/apps/candock/lib/ext/libboost_program_options.so.1.64.0
+2b66284c9000-2b6628692000 r-xp 00000000 00:2f 6737999                    /apps/spack/bell/apps/gcc/9.3.0-gcc-4.8.5-z2ug7z7/lib64/libstdc++.so.6.0.28
+2b6628692000-2b6628892000 ---p 001c9000 00:2f 6737999                    /apps/spack/bell/apps/gcc/9.3.0-gcc-4.8.5-z2ug7z7/lib64/libstdc++.so.6.0.28
+2b6628892000-2b662889d000 r--p 001c9000 00:2f 6737999                    /apps/spack/bell/apps/gcc/9.3.0-gcc-4.8.5-z2ug7z7/lib64/libstdc++.so.6.0.28
+2b662889d000-2b66288a0000 rw-p 001d4000 00:2f 6737999                    /apps/spack/bell/apps/gcc/9.3.0-gcc-4.8.5-z2ug7z7/lib64/libstdc++.so.6.0.28
+2b66288a0000-2b66288a3000 rw-p 00000000 00:00 0 
+2b66288a3000-2b66289a4000 r-xp 00000000 00:24 77558                      /usr/lib64/libm-2.17.so
+2b66289a4000-2b6628ba3000 ---p 00101000 00:24 77558                      /usr/lib64/libm-2.17.so
+2b6628ba3000-2b6628ba4000 r--p 00100000 00:24 77558                      /usr/lib64/libm-2.17.so
+2b6628ba4000-2b6628ba5000 rw-p 00101000 00:24 77558                      /usr/lib64/libm-2.17.so
+2b6628ba5000-2b6628bbc000 r-xp 00000000 00:2f 6737939                    /apps/spack/bell/apps/gcc/9.3.0-gcc-4.8.5-z2ug7z7/lib64/libgcc_s.so.1
+2b6628bbc000-2b6628dbb000 ---p 00017000 00:2f 6737939                    /apps/spack/bell/apps/gcc/9.3.0-gcc-4.8.5-z2ug7z7/lib64/libgcc_s.so.1
+2b6628dbb000-2b6628dbc000 r--p 00016000 00:2f 6737939                    /apps/spack/bell/apps/gcc/9.3.0-gcc-4.8.5-z2ug7z7/lib64/libgcc_s.so.1
+2b6628dbc000-2b6628dbd000 rw-p 00017000 00:2f 6737939                    /apps/spack/bell/apps/gcc/9.3.0-gcc-4.8.5-z2ug7z7/lib64/libgcc_s.so.1
+2b6628dbd000-2b6628f80000 r-xp 00000000 00:24 77542                      /usr/lib64/libc-2.17.so
+2b6628f80000-2b6629180000 ---p 001c3000 00:24 77542libm-2.17.so
+2b66289a4000-2b6628ba3000 ---p 00101000 00:24 77558                      /usr/lib64/libm-2.17.so
+2b6628ba3000-2b6628ba4000 r--p 00100000 00:24 77558                      /usr/lib64/libm-2.17.so
+2b6628ba4000-2b6628ba5000 rw-p 00101000 00:24 77558                      /usr/lib64/libm-2.17.so
+2b6628ba5000-2b6628bbc000 r-xp 00000000 00:2f 6737939                    /apps/spack/bell/apps/gcc/9.3.0-gcc-4.8.5-z2ug7z7/lib64/libgcc_s.so.1
+2b6628bbc000-2b6628dbb000 ---p 00017000 00:2f 6737939                    /apps/spack/bell/apps/gcc/9.3.0-gcc-4.8.5-z2ug7z7/lib64/libgcc_s.so.1
+2b6628dbb000-2b6628dbc000 r--p 00016000 00:2f 6737939                    /apps/spack/bell/apps/gcc/9.3.0-gcc-4.8.5-z2ug7z7/lib64/libgcc_s.so.1
+2b6628dbc000-2b6628dbd000 rw-p 00017000 00:2f 6737939                    /apps/spack/bell/apps/gcc/9.3.0-gcc-4.8.5-z2ug7z7/lib64/libgcc_s.so.1
+2b6628dbd000-2b6628f80000 r-xp 00000000 00:24 77542                      /usr/lib64/libc-2.17.so
+2b6628f80000-2b6629180000 ---p 001c3000 00:24 77542                      /usr/lib64/libc-2.17.so
+2b6629180000-2b6629184000 r--p 001c3000 00:24 77542                      /usr/lib64/libc-2.17.so
+2b6629184000-2b6629186000 rw-p 001c7000 00:24 77542                      /usr/lib64/libc-2.17.so
+2b6629186000-2b662918b000 rw-p 00000000 00:00 0 
+2b662918b000-2b6629192000 r-xp 00000000 00:24 77777                      /usr/lib64/librt-2.17.so
+2b6629192000-2b6629391000 ---p 00007000 00:24 77777                      /usr/lib64/librt-2.17.so
+2b6629391000-2b6629392000 r--p 00006000 00:24 77777                      /usr/lib64/librt-2.17.so
+2b6629392000-2b6629393000 rw-p 00007000 00:24 77777                      /usr/lib64/librt-2.17.so
+2b6629393000-2b6629394000 ---p 00000000 00:00 0 
+2b6629394000-2b6629594000 rw-p 00000000 00:00 0 
+2b6629594000-2b6629595000 ---p 00000000 00:00 0 
+2b6629595000-2b6629795000 rw-p 00000000 00:00 0 
+2b6629795000-2b6629796000 ---p 00000000 00:00 0 
+2b6629796000-2b6629996000 rw-p 00000000 00:00 0 
+2b6629996000-2b6629997000 ---p 00000000 00:00 0 
+                      /usr/lib64/libc-2.17.so
+2b6629180000-2b6629184000 r--p 001c3000 00:24 77542                      /usr/lib64/libc-2.17.so
+2b6629184000-2b6629186000 rw-p 001c7000 00:24 77542                      /usr/lib64/libc-2.17.so
+2b6629186000-2b662918b000 rw-p 00000000 00:00 0 
+2b662918b000-2b6629192000 r-xp 00000000 00:24 77777                      /usr/lib64/librt-2.17.so
+2b6629192000-2b6629391000 ---p 00007000 00:24 77777                      /usr/lib64/librt-2.17.so
+2b6629391000-2b6629392000 r--p 00006000 00:24 77777                      /usr/lib64/librt-2.17.so
+2b6629392000-2b6629393000 rw-p 00007000 00:24 77777                      /usr/lib64/librt-2.17.so
+2b6629393000-2b6629394000 ---p 00000000 00:00 0 
+2b6629394000-2b6629594000 rw-p 00000000 00:00 0 
+2b6629594000-2b6629595000 ---p 00000000 00:00 0 
+2b6629595000-2b6629795000 rw-p 00000000 00:00 0 
+2b6629795000-2b6629796000 ---p 00000000 00:00 0 
+2b6629796000-2b6629996000 rw-p 00000000 00:00 0 
+2b6629996000-2b6629997000 ---p 00000000 00:00 0 
+2b6629997000-2b6629b97000 rw-p 00000000 00:00 0 
+2b6629b97000-2b6629b98000 ---p 00000000 00:00 0 
+2b6629b98000-2b6629d98000 rw-p 00000000 00:00 0 
+2b6629d98000-2b6629d99000 ---p 00000000 00:00 0 
+2b6629d99000-2b6629f99000 rw-p 00000000 00:00 0 
+2b6629f99000-2b6629f9a000 ---p 00000000 00:00 0 
+2b6629f9a000-2b662a19a000 rw-p 00000000 00:00 0 
+2b662a19a000-2b662a19b000 ---p 00000000 00:00 0 
+2b662a19b000-2b662a39b000 rw-p 00000000 00:00 0 
+2b662a39b000-2b662a39c000 ---p 00000000 00:00 0 
+2b662a39c000-2b662a59c000 rw-p 00000000 00:00 0 
+2b662a59c000-2b662a59d000 ---p 00000000 00:00 0 
+2b662a59d000-2b662a79d000 rw-p 00000000 00:00 0 
+2b662a79d000-2b662a79e000 ---p 00000000 00:00 0 
+2b662a79e000-2b662a99e000 rw-p 00000000 00:00 0 
+2b662a99e000-2b662a99f000 ---p 00000000 00:00 0 
+2b662a99f000-2b662ab9f000 rw-p 00000000 00:00 0 
+2b662ab9f000-2b662aba0000 ---p 00000000 00:00 0 
+2b662aba0000-2b662ada0000 rw-p 00000000 00:00 0 
+2b662ada0000-2b662ada1000 ---p 00000000 00:00 0 
+2b662ada1000-2b662afa1000 rw-p 00000000 00:02b6629997000-2b6629b97000 rw-p 00000000 00:00 0 
+2b6629b97000-2b6629b98000 ---p 00000000 00:00 0 
+2b6629b98000-2b6629d98000 rw-p 00000000 00:00 0 
+2b6629d98000-2b6629d99000 ---p 00000000 00:00 0 
+2b6629d99000-2b6629f99000 rw-p 00000000 00:00 0 
+2b6629f99000-2b6629f9a000 ---p 00000000 00:00 0 
+2b6629f9a000-2b662a19a000 rw-p 00000000 00:00 0 
+2b662a19a000-2b662a19b000 ---p 00000000 00:00 0 
+2b662a19b000-2b662a39b000 rw-p 00000000 00:00 0 
+2b662a39b000-2b662a39c000 ---p 00000000 00:00 0 
+2b662a39c000-2b662a59c000 rw-p 00000000 00:00 0 
+2b662a59c000-2b662a59d000 ---p 00000000 00:00 0 
+2b662a59d000-2b662a79d000 rw-p 00000000 00:00 0 
+2b662a79d000-2b662a79e000 ---p 00000000 00:00 0 
+2b662a79e000-2b662a99e000 rw-p 00000000 00:00 0 
+2b662a99e000-2b662a99f000 ---p 00000000 00:00 0 
+2b662a99f000-2b662ab9f000 rw-p 00000000 00:00 0 
+2b662ab9f000-2b662aba0000 ---p 00000000 00:00 0 
+2b662aba0000-2b662ada0000 rw-p 00000000 00:00 0 
+2b662ada0000-2b662ada1000 ---p 00000000 00:00 0 
+2b662ada1000-2b662afa1000 rw-p 00000000 00:00 0 
+2b662afa1000-2b662afa2000 ---p 00000000 00:00 0 
+2b662afa2000-2b662b1a2000 rw-p 00000000 00:00 0 
+2b662b1a2000-2b662b1a3000 ---p 00000000 00:00 0 
+2b662b1a3000-2b662b3a3000 rw-p 00000000 00:00 0 
+2b662b3a3000-2b662b3a4000 ---p 00000000 00:00 0 
+2b662b3a4000-2b662b5a4000 rw-p 00000000 00:00 0 
+2b662b5a4000-2b662b5a5000 ---p 00000000 00:00 0 
+2b662b5a5000-2b662b7a5000 rw-p 00000000 00:00 0 
+2b662b7a5000-2b662b7a6000 ---p 00000000 00:00 0 
+2b662b7a6000-2b662b9a6000 rw-p 00000000 00:00 0 
+2b662b9a6000-2b662b9a7000 ---p 00000000 00:00 0 
+2b662b9a7000-2b662bba7000 rw-p 00000000 00:00 0 
+2b662c000000-2b662c91d000 rw-p 00000000 00:00 0 
+2b662c91d000-2b6630000000 ---p 00000000 00:00 0 
+2b6630000000-2b66309cb000 rw-p 00000000 00:00 0 
+2b66309cb000-2b6634000000 ---p 00000000 00:00 0 
+2b6634000000-2b66346b4000 rw-p 00000000 00:00 0 
+2b66346b4000-2b6638000000 ---p 00000000 00:00 0 
+2b6638000000-2b663873b000 rw-p 00000000 00:00 0 
+2b663873b000-2b663c000000 ---p 00000000 00:00 0 
+2b663c000000-2b663c8ee000 rw-p 00000000a000 ---p 00299000 00:30 117719065                  /depot-old/gchopra/apps/openmm/lib/libOpenMM.so
+2b66278fa000-2b6627905000 rw-p 00299000 00:30 117719065                  /depot-old/gchopra/apps/openmm/lib/libOpenMM.so
+2b6627905000-2b6627906000 rw-p 00000000 00:00 0 
+2b6627906000-2b662790c000 r-xp 00000000 00:30 33892592                   /depot-old/gchopra/apps/openmm/lib/libKBPlugin.so
+2b662790c000-2b6627b0b000 ---p 00006000 00:30 33892592                   /depot-old/gchopra/apps/openmm/lib/libKBPlugin.so
+2b6627b0b000-2b6627b0c000 rw-p 00005000 00:30 33892592                   /depot-old/gchopra/apps/openmm/lib/libKBPlugin.so
+2b6627b0c000-2b6627b34000 r-xp 00000000 00:30 117193111                  /depot-old/gchopra/apps/candock/lib/ext/libboost_filesystem.so.1.64.0
+2b6627b34000-2b6627d33000 ---p 00028000 00:30 117193111                  /depot-old/gchopra/apps/candock/lib/ext/libboost_filesystem.so.1.64.0
+2b6627d33000-2b6627d35000 rw-p 00027000 00:30 117193111                  /depot-old/gchopra/apps/ca3359436000-3359437000 rw-p 00036000 00:30 434590695                      /depot-old/gchopra/apps/candock/lib/v0.4.3/libgslcblas.so.0
+2b6626728000-2b662674a000 r-xp 00000000 00:24 77261                      /usr/lib64/ld-2.17.so
+2b662674a000-2b662674e000 rw-p 00000000 00:00 0 
+2b662674f000-2b6626750000 rw-p 00000000 00:00 0 
+2b6626762000-2b6626772000 rw-p 00000000 00:00 0 
+2b6626949000-2b662694a000 r--p 00021000 00:24 77261                      /usr/lib64/ld-2.17.so
+2b662694a000-2b662694b000 rw-p 00022000 00:24 77261                      /usr/lib64/ld-2.17.so
+2b662694b000-2b662694c000 rw-p 00000000 00:00 0 
+2b662694c000-2b6626e2a000 r-xp 00000000 00:30 117683270                  /depot-old/gchopra/apps/candock/lib/v0.4.3/libcandock.so
+2b6626e2a000-2b662702a000 ---p 004de000 00:30 117683270                  /depot-old/gchopra/apps/candock/lib/v0.4.3/libcandock.so
+2b662702a000-2b6627035000 rw-p 004de000 00:30 117683270                  /depot-old/gchopra/apps/candock/lib/v0.4.3/libcandock.so
+2b6627035000-2b662700 0 
+2b662afa1000-2b662afa2000 ---p 00000000 00:00 0 
+2b662afa2000-2b662b1a2000 rw-p 00000000 00:00 0 
+2b662b1a2000-2b662b1a3000 ---p 00000000 00:00 0 
+2b662b1a3000-2b662b3a3000 rw-p 00000000 00:00 0 
+2b662b3a3000-2b662b3a4000 ---p 00000000 00:00 0 
+2b662b3a4000-2b662b5a4000 rw-p 00000000 00:00 0 
+2b662b5a4000-2b662b5a5000 ---p 00000000 00:00 0 
+2b662b5a5000-2b662b7a5000 rw-p 00000000 00:00 0 
+2b662b7a5000-2b662b7a6000 ---p 00000000 00:00 0 
+2b662b7a6000-2b662b9a6000 rw-p 00000000 00:00 0 
+2b662b9a6000-2b662b9a7000 ---p 00000000 00:00 0 
+2b662b9a7000-2b662bba7000 rw-p 00000000 00:00 0 
+2b662c000000-2b662c91d000 rw-p 00000000 00:00 0 
+2b662c91d000-2b6630000000 ---p 00000000 00:00 0 
+2b6630000000-2b66309cb000 rw-p 00000000 00:00 0 
+2b66309cb000-2b6634000000 ---p 00000000 00:00 0 
+2b6634000000-2b66346b4000 rw-p 00000000 00:00 0 
+2b66346b4000-2b6638000000 ---p 00000000 00:00 0 
+2b6638000000-2b663873b000 rw-p 00000000 00:00 0 
+2b663873b000-2b663c000000 ---p 00000000 00:00 0 
+2b663c000000-2b663c8ee000 rw-p 00000000 00:00 0 
+2b663c8ee000-2b6640000000 ---p 00000000 00:00 0 
+2b6640000000-2b664091c000 rw-p 00000000 00:00 0 
+2b664091c000-2b6644000000 ---p 00000000 00:00 0 
+2b6644000000-2b6644986000 rw-p 00000000 00:00 0 
+2b6644986000-2b6648000000 ---p 00000000 00:00 0 
+2b6648000000-2b6648924000 rw-p 00000000 00:00 0 
+2b6648924000-2b664c000000 ---p 00000000 00:00 0 
+2b664c000000-2b664c8ab000 rw-p 00000000 00:00 0 
+2b664c8ab000-2b6650000000 ---p 00000000 00:00 0 
+2b6650000000-2b665080d000 rw-p 00000000 00:00 0 
+2b665080d000-2b6654000000 ---p 00000000 00:00 0 
+2b6654000000-2b66548a9000 rw-p 00000000 00:00 0 
+2b66548a9000-2b6658000000 ---p 00000000 00:00 0 
+2b6658000000-2b665881a000 rw-p 00000000 00:00 0 
+2b665881a000-2b665c000000 ---p 00000000 00:00 0 
+2b665c000000-2b665c7e9000 rw-p 00000000 00:00 0 
+2b665c7e9000-2b6660000000 ---p 00000000 00:00 0 
+2b6660000000-2b66608fa000 rw-p 00000000 00:00 0 
+2b66608fa000-2b6664000000 ---p 00000000 00:00 0 
+2b6664000000-2b6664996000 rw-p 00000000 00:00 0 
+2b6664996000-2b6668000000 ---p 000ndock/lib/ext/libboost_filesystem.so.1.64.0
+2b6627d35000-2b6627d38000 r-xp 00000000 00:30 117193115                  /depot-old/gchopra/apps/candock/lib/ext/libboost_system.so.1.64.0
+2b6627d38000-2b6627f37000 ---p 00003000 00:30 117193115                  /depot-old/gchopra/apps/candock/lib/ext/libboost_system.so.1.64.0
+2b6627f37000-2b6627f38000 rw-p 00002000 00:30 117193115                  /depot-old/gchopra/apps/candock/lib/ext/libboost_system.so.1.64.0
+2b6627f38000-2b6628036000 r-xp 00000000 00:30 117193114                  /depot-old/gchopra/apps/candock/lib/ext/libboost_regex.so.1.64.0
+2b6628036000-2b6628236000 ---p 000fe000 00:30 117193114                  /depot-old/gchopra/apps/candock/lib/ext/libboost_regex.so.1.64.0
+2b6628236000-2b662823c000 rw-p 000fe000 00:30 117193114                  /depot-old/gchopra/apps/candock/lib/ext/libboost_regex.so.1.64.0
+2b662823c000-2b66282c6000 r-xp 00000000 00:30 117193113                  /depot-old/gchopra/apps/candock/lib/ext/libboost_program_options.so.1.64.0
+241000 rw-p 00000000 00:00 0 
+2b6627041000-2b6627058000 r-xp 00000000 00:24 77759                      /usr/lib64/libpthread-2.17.so
+2b6627058000-2b6627257000 ---p 00017000 00:24 77759                      /usr/lib64/libpthread-2.17.so
+2b6627257000-2b6627258000 r--p 00016000 00:24 77759                      /usr/lib64/libpthread-2.17.so
+2b6627258000-2b6627259000 rw-p 00017000 00:24 77759                      /usr/lib64/libpthread-2.17.so
+2b6627259000-2b662725d000 rw-p 00000000 00:00 0 
+2b662725d000-2b662725f000 r-xp 00000000 00:24 77554                      /usr/lib64/libdl-2.17.so
+2b662725f000-2b662745f000 ---p 00002000 00:24 77554                      /usr/lib64/libdl-2.17.so
+2b662745f000-2b6627460000 r--p 00002000 00:24 77554                      /usr/lib64/libdl-2.17.so
+2b6627460000-2b6627461000 rw-p 00003000 00:24 77554                      /usr/lib64/libdl-2.17.so
+2b6627461000-2b66276fa000 r-xp 00000000 00:30 117719065                  /depot-old/gchopra/apps/openmm/lib/libOpenMM.so
+2b66276fa000-2b66278fa000 ---p 00299000 00:30 117719065                  /depot-old/gchopra/apps/openmm/lib/libOpenMM.so
+2b66278fa000-2b6627905000 rw-p 00299000 00:30 117719065                  /depot-old/gchopra/apps/openmm/lib/libOpenMM.so
+2b6627905000-2b6627906000 rw-p 00000000 00:00 0 
+2b6627906000-2b662790c000 r-xp 00000000 00:30 33892592                   /depot-old/gchopra/apps/openmm/lib/libKBPlugin.so
+2b662790c000-2b6627b0b000 ---p 00006000 00:30 33892592                   /depot-old/gchopra/apps/openmm/lib/libKBPlugin.so
+2b6627b0b000-2b6627b0c000 rw-p 00005000 00:30 33892592                   /depot-old/gchopra/apps/openmm/lib/libKBPlugin.so
+2b6627b0c000-2b6627b34000 r-xp 00000000 00:30 117193111                  /depot-old/gchopra/apps/candock/lib/ext/libboost_filesystem.so.1.64.0
+2b6627b34000-2b6627d33000 ---p 00028000 00:30 117193111                  /depot-old/gchopra/apps/candock/lib/ext/libboost_filesystem.so.1.64.0
+2b6627d33000-2b6627d35000 rw-p 00027000 00:30 117193111                  /depot-old/gchopra/apps/ca 00:00 0 
+2b663c8ee000-2b6640000000 ---p 00000000 00:00 0 
+2b6640000000-2b664091c000 rw-p 00000000 00:00 0 
+2b664091c000-2b6644000000 ---p 00000000 00:00 0 
+2b6644000000-2b6644986000 rw-p 00000000 00:00 0 
+2b6644986000-2b6648000000 ---p 00000000 00:00 0 
+2b6648000000-2b6648924000 rw-p 00000000 00:00 0 
+2b6648924000-2b664c000000 ---p 00000000 00:00 0 
+2b664c000000-2b664c8ab000 rw-p 00000000 00:00 0 
+2b664c8ab000-2b6650000000 ---p 00000000 00:00 0 
+2b6650000000-2b665080f000 rw-p 00000000 00:00 0 
+2b665080f000-2b6654000000 ---p 00000000 00:00 0 
+2b6654000000-2b66548a9000 rw-p 00000000 00:00 0 
+2b66548a9000-2b6658000000 ---p 00000000 00:00 0 
+2b6658000000-2b665881c000 rw-p 00000000 00:00 0 
+2b665881c000-2b665c000000 ---p 00000000 00:00 0 
+2b665c000000-2b665c7eb000 rw-p 00000000 00:00 0 
+2b665c7eb000-2b6660000000 ---p 00000000 00:00 0 
+2b6660000000-2b66608fa000 rw-p 00000000 00:00 0 
+2b66608fa000-2b6664000000 ---p 00000000 00:00 0 
+2b6664000000-2b6664996000 rw-p 00000000 00:00 0 
+2b6664996000-2b6668000000 ---p 00000000 00:00 0 
+2b6668000000-2b6668863000 rw-p 00000000 00:00 0 
+2b6668863000-2b666c000000 ---p 00000000 00:00 0 
+2b666c000000-2b666c972000 rw-p 00000000 00:00 0 
+2b666c972000-2b6670000000 ---p 00000000 00:00 0 
+2b6670000000-2b6672fc3000 rw-p 00000000 00:00 0 
+2b6674000000-2b66748b8000 rw-p 00000000 00:00 0 
+2b66748b8000-2b6678000000 ---p 00000000 00:00 0 
+2b6678000000-2b66789b9000 rw-p 00000000 00:00 0 
+2b66789b9000-2b667c000000 ---p 00000000 00:00 0 
+2b667c000000-2b667c935000 rw-p 00000000 00:00 0 
+2b667c935000-2b6680000000 ---p 00000000 00:00 0 
+2b6682fc3000-2b668bf0c000 rw-p 00000000 00:00 0 
+2b6694e55000-2b669addb000 rw-p 00000000 00:00 0 
+7ffe80d6a000-7ffe80d8e000 rw-p 00000000 00:00 0                          [stack]
+7ffe80dbd000-7ffe80dbf000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+00000 00:00 0 
+2b6668000000-2b6668863000 rw-p 00000000 00:00 0 
+2b6668863000-2b666c000000 ---p 00000000 00:00 0 
+2b666c000000-2b666c972000 rw-p 00000000 00:00 0 
+2b666c972000-2b6670000000 ---p 00000000 00:00 0 
+2b6670000000-2b6672fc3000 rw-p 00000000 00:00 0 
+2b6674000000-2b66748b8000 rw-p 00000000 00:00 0 
+2b66748b8000-2b6678000000 ---p 00000000 00:00 0 
+2b6678000000-2b66789b9000 rw-p 00000000 00:00 0 
+2b66789b9000-2b667c000000 ---p 00000000 00:00 0 
+2b667c000000-2b667c935000 rw-p 00000000 00:00 0 
+2b667c935000-2b6680000000 ---p 00000000 00:00 0 
+2b6682fc3000-2b668bf0c000 rw-p 00000000 00:00 0 
+2b6694e55000-2b669addb000 rw-p 00000000 00:00 0 
+7ffe80d6a000-7ffe80d8e000 rw-p 00000000 00:00 0                          [stack]
+7ffe80dbd000-7ffe80dbf000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+b66282c6000-2b66284c5000 ---p 0008a000 00:30 117193113                  /depot-old/gchopra/apps/candock/lib/ext/libboost_program_options.so.1.64.0
+2b66284c5000-2b66284c9000 rw-p 00089000 00:30 117193113                  /depot-old/gchopra/apps/candock/lib/ext/libboost_program_options.so.1.64.0
+2b66284c9000-2b6628692000 r-xp 00000000 00:2f 6737999                    /apps/spack/bell/apps/gcc/9.3.0-gcc-4.8.5-z2ug7z7/lib64/libstdc++.so.6.0.28
+2b6628692000-2b6628892000 ---p 001c9000 00:2f 6737999                    /apps/spack/bell/apps/gcc/9.3.0-gcc-4.8.5-z2ug7z7/lib64/libstdc++.so.6.0.28
+2b6628892000-2b662889d000 r--p 001c9000 00:2f 6737999                    /apps/spack/bell/apps/gcc/9.3.0-gcc-4.8.5-z2ug7z7/lib64/libstdc++.so.6.0.28
+2b662889d000-2b66288a0000 rw-p 001d4000 00:2f 6737999                    /apps/spack/bell/apps/gcc/9.3.0-gcc-4.8.5-z2ug7z7/lib64/libstdc++.so.6.0.28
+2b66288a0000-2b66288a3000 rw-p 00000000 00:00 0 
+2b66288a3000-2b66289a4000 r-xp 00000000 00:24 77558                      /usr/lib64/ndock/lib/ext/libboost_filesystem.so.1.64.0
+2b6627d35000-2b6627d38000 r-xp 00000000 00:30 117193115                  /depot-old/gchopra/apps/candock/lib/ext/libboost_system.so.1.64.0
+2b6627d38000-2b6627f37000 ---p 00003000 00:30 117193115                  /depot-old/gchopra/apps/candock/lib/ext/libboost_system.so.1.64.0
+2b6627f37000-2b6627f38000 rw-p 00002000 00:30 117193115                  /depot-old/gchopra/apps/candock/lib/ext/libboost_system.so.1.64.0
+2b6627f38000-2b6628036000 r-xp 00000000 00:30 117193114                  /depot-old/gchopra/apps/candock/lib/ext/libboost_regex.so.1.64.0
+2b6628036000-2b6628236000 ---p 000fe000 00:30 117193114                  /depot-old/gchopra/apps/candock/lib/ext/libboost_regex.so.1.64.0
+2b6628236000-2b662823c000 rw-p 000fe000 00:30 117193114                  /depot-old/gchopra/apps/candock/lib/ext/libboost_regex.so.1.64.0
+2b662823c000-2b66282c6000 r-xp 00000000 00:30 117193113                  /depot-old/gchopra/apps/candock/lib/ext/libboost_program_options.so.1.64.0
+2/var/spool/slurm/job2988682/slurm_script: line 43: 108928 Aborted                 $MCANDOCK_MOD_PATH/../bin/v0.4.3/cd_${__sub_program} $([[ ! -z "$@" ]] && echo "$@")

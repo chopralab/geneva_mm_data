@@ -1,0 +1,247 @@
+32
+32
+started on Sun Mar 21 15:30:44 2021
+
+Clock is at 0.000176451
+-----------------------------------------------------------------------|
+|         CCCCC    AAA   NN   NN DDDDD    OOOOO   CCCCC  KK  KK        |
+|        CC       AAAAA  NNN  NN DD  DD  OO   OO CC      KK KK         |
+|        CC      AA   AA NN N NN DD   DD OO   OO CC      KKKK          |
+|        CC      AAAAAAA NN  NNN DD   DD OO   OO CC      KK KK         |
+|         CCCCC  AA   AA NN   NN DDDDDD   OOOO0   CCCCC  KK  KK        |
+|                                                                      |
+|                             It can-dock!                             |
+|                                                                      |
+|              Copyright 2016  Chopra Lab (chopralab.org)              |
+|                          Purdue  University                          |
+|                                                                      |
+|                      Member of the CANDIY Suite                      |
+|______________________________________________________________________|
+version 0.4.3
+4a17afdffa544a78e3640be60354d0f27e06a946 on branch HEAD
+running /depot/gchopra/apps/candock/v0.4.3_slurm/modules/../bin/v0.4.3/cd_link_fragments on hostname bell-a374.rcac.purdue.edu
+Detected support for 128 concurrent threads.
+	 Using 32 threads.
+      add_single_atoms =                                                
+             amber_xml =    /depot/gchopra/apps/candock/data/amber10.xml
+        antitarget_dir =                                                
+    antitarget_linking =                                               1
+                   bio =    /depot/gchopra/apps/candock/bslibdb/data/bio
+                 bslib =             /depot/gchopra/apps/candock/bslibdb
+       centro_clus_rad =                                               3
+              centroid =                                                
+  change_terminal_atom =                                                
+           clash_coeff =                                            0.75
+              clus_rad =                                               2
+           clusterfile =                             clustered_seeds.txt
+                  comp =                                         reduced
+             conf_spin =                                              10
+                config =                                                
+                  cuda =                                               0
+                cutoff =                                               6
+                  dist = /depot/gchopra/apps/candock/data/csd_complete_distance_distributions.txt
+       docked_clus_rad =                                               2
+            docked_dir =                                          docked
+     dynamic_step_size =                                               2
+         dynamic_steps =                                            1000
+              excluded =                                             0.8
+                fftype =                                              kb
+            force_seed =                                                
+          fragment_bag =                                                
+          fragment_mol =                                                
+              friction =                                              91
+                  func =                                          radial
+              gaff_dat =       /depot/gchopra/apps/candock/data/gaff.dat
+             gaff_heme =                                                
+              gaff_xml =       /depot/gchopra/apps/candock/data/gaff.xml
+                  grid =                                           0.375
+           gridpdb_hcp =                                 gridpdb_hcp.pdb
+            integrator =                                          verlet
+           interatomic =                                               8
+             iterative =                                               0
+           jiggle_seed =                                      1597463007
+                  json =                                     probis.json
+                jsonwl =                        probis_with_ligands.json
+         lig_clus_file =                             ligand_clusters.pdb
+                ligand =                                    ligands.mol2
+             link_iter =                                            1000
+   lower_tol_seed_dist =                                               2
+      max_allow_energy =                                               0
+       max_clique_size =                                               3
+       max_frag_radius =                                              16
+              max_iter =                                              10
+        max_iter_final =                                             100
+       max_num_ligands =                                              10
+     max_num_possibles =                                          200000
+     max_possible_conf =                                              -1
+              mini_tol =                                          0.0001
+                 names =  /depot/gchopra/apps/candock/bslibdb/data/names
+                  ncpu =                                              32
+                neighb =                                               0
+          new_scaffold =                                               0
+                 nosql =                                    probis.nosql
+            num_bsites =                                               3
+            num_univec =                                             256
+               obj_dir =                 /depot/gchopra/apps/candock/obj
+               pos_tol =                                           1e-11
+        potential_file =                                  potentials.txt
+                  prep =                            prepared_ligands.pdb
+       probis_clus_rad =                                               3
+        probis_min_pts =                                              10
+    probis_min_z_score =                                             2.5
+              receptor =                                    receptor.pdb
+                   ref =                                            mean
+          rmsd_crystal =                                               0
+                 scale =                                              10
+                 seeds =                                       seeds.txt
+             seeds_pdb =                                       seeds.pdb
+        seeds_till_bad =                                              -1
+       seeds_till_good =                                              -1
+          seeds_to_add =                                              50
+        seeds_to_avoid =                                              50
+                  spin =                                              60
+              srf_file =                                      probis.srf
+                  step =                                            0.01
+            target_dir =                                                
+        target_linking =                                               1
+           temperature =                                             300
+         tol_seed_dist =                                               2
+           top_percent =                                            0.05
+         top_seeds_dir =                                                
+           update_freq =                                              10
+   upper_tol_seed_dist =                                               2
+             water_xml =      /depot/gchopra/apps/candock/data/tip3p.xml
+         z_scores_file =                                    z_scores.pdb
+
+Fragmenting files in ligands.mol2
+Running PROBIS for receptor in file: receptor.pdb
+Starting ProBiS for binding sites prediction
+--- Complete proteins' search ---
+MODIFIERS USED: local longnames 
+PARAMETERS USED - To modify, copy rows between the
+dashed lines to a separate input parameter file -
+----------------------------------------------------------
+NCPU		                32
+SRF_FILE                /scratch/bell/gwijewar/MSK1/3kn6/PRF/receptor/probis.srf
+PROTEIN1                /scratch/bell/gwijewar/MSK1/3kn6/PRF/receptor.pdb
+PROTEIN2                
+CHAIN1                  A
+CHAIN2                  
+INTER_CHAIN_DIST        3
+SURF_FILE               bslibdb/bslib.txt
+INDIR                   
+OUTDIR                  
+SPACING                 3
+PROBE                   1.4
+MAXR                    1.8
+CATOM                   1.5
+NATOM                   1.45
+OATOM                   1.35
+SATOM                   1.7
+HATOM                   1
+EPS                     0.001
+SURF                    1.1
+DESC_PROBE_DIST         3
+BFACTOR                 0.8
+POP_MEAN                1.958
+POP_SD                  2.21468
+NFP                     0.25
+SITE_RMSD               3 *
+RESOLUTION              2
+OGA                     1
+OGB                     1
+OGC                     1
+OGV                     2
+THRMSD                  1.2
+CUTOFF_FIRST            9
+CUTOFF_SECOND           15
+NORM_EPS                1e-08
+MAX_VERTICES            20000 *
+MATRIX_CUTOFF           0.2
+VECTOR_CUTOFF           2
+RMSD_INCR               0.5
+RMSD_INCR_ADD           0.6
+WORD                    32 *
+CLIQUE_TLIMIT           1
+CLUS_SPEC               5
+CLUS_TO_OUTPUT          5
+SCONS                   4
+ALIGNMENT_NO            0
+BLOSUM                  blosum80
+MOTIF1                  
+MOTIF2                  
+BSITE1                  
+BSITE2                  
+SURF_VECTOR_ANGLE       1.5708
+BLOSUM_SCORE            10000
+CALPHA_RMSD             3
+K                       0.17
+LAMBDA                  0.343
+Z_SCORE                 1
+Z_SCORE_CONS            2
+Z_SCORE_FP              3
+GLOBAL_DIST             10
+GLOBAL_SVAL             23
+GLOBAL_ANGLE            0.7854
+LIG_NEIGHB             2
+PP_DIST                10
+SL_DIST                8
+NU_DIST                10
+IO_DIST                5
+NCLTRIES               100
+NMOL                   0
+LIGDIR                 
+NOSQL_FILE             /scratch/bell/gwijewar/MSK1/3kn6/PRF/receptor/probis.nosql
+JSON_FILE              /scratch/bell/gwijewar/MSK1/3kn6/PRF/receptor/probis.json
+----------------------------------------------------------
+(*) These parameters cannot be changed.
+Setting descriptors ...
+THREAD> Initializing thread 0
+THREAD> Initializing thread 1
+THREAD> Initializing thread 2
+THREAD> Initializing thread 3
+THREAD> Initializing thread 4
+THREAD> Initializing thread 5
+THREAD> Initializing thread 6
+THREAD> Initializing thread 7
+THREAD> Initializing thread 8
+THREAD> Initializing thread 9
+THREAD> Initializing thread 10
+THREAD> Initializing thread 11
+THREAD> Initializing thread 12
+THREAD> Initializing thread 13
+THREAD> Initializing thread 14
+THREAD> Initializing thread 15
+THREAD> Initializing thread 16
+THREAD> Initializing thread 17
+THREAD> Initializing thread 18
+THREAD> Initializing thread 19
+THREAD> Initializing thread 20
+THREAD> Initializing thread 21
+THREAD> Initializing thread 22
+THREAD> Initializing thread 23
+THREAD> Initializing thread 24
+THREAD> Initializing thread 25
+THREAD> Initializing thread 26
+THREAD> Initializing thread 27
+THREAD> Initializing thread 28
+THREAD> Initializing thread 29
+THREAD> Initializing thread 30
+THREAD> Initializing thread 31
+Warning (DENORM) : Wrong format of this nosql line:
+Binding sites prediction took 50.8582 wallclock seconds
+starting clustering ...
+starting clustering ...
+starting clustering ...
+starting clustering ...
+processing combined histogram ...
+Compiling scoring function...
+Docking fragments into: receptor/top_seeds
+Done with fragment docking
+Parsing obj function from disk
+Starting to dock the fragments into originally given ligands
+Starting connection of seeds for ligand unlabled_0
+Linking of fragments is complete
+Finished on Sun Mar 21 15:38:12 2021
+
+Clock is at 448.381

@@ -1,0 +1,384 @@
+20
+20
+started on Mon May 17 17:47:27 2021
+
+Clock is at 0.000185708
+-----------------------------------------------------------------------|
+|         CCCCC    AAA   NN   NN DDDDD    OOOOO   CCCCC  KK  KK        |
+|        CC       AAAAA  NNN  NN DD  DD  OO   OO CC      KK KK         |
+|        CC      AA   AA NN N NN DD   DD OO   OO CC      KKKK          |
+|        CC      AAAAAAA NN  NNN DD   DD OO   OO CC      KK KK         |
+|         CCCCC  AA   AA NN   NN DDDDDD   OOOO0   CCCCC  KK  KK        |
+|                                                                      |
+|                             It can-dock!                             |
+|                                                                      |
+|              Copyright 2016  Chopra Lab (chopralab.org)              |
+|                          Purdue  University                          |
+|                                                                      |
+|                      Member of the CANDIY Suite                      |
+|______________________________________________________________________|
+version 0.4.3
+4a17afdffa544a78e3640be60354d0f27e06a946 on branch HEAD
+running /depot/gchopra/apps/candock/v0.4.3_slurm/modules/../bin/v0.4.3/cd_link_fragments on hostname bell-a341.rcac.purdue.edu
+Detected support for 128 concurrent threads.
+	 Using 20 threads.
+      add_single_atoms =                                                
+             amber_xml =    /depot/gchopra/apps/candock/data/amber10.xml
+        antitarget_dir =                                                
+    antitarget_linking =                                               1
+                   bio =    /depot/gchopra/apps/candock/bslibdb/data/bio
+                 bslib =             /depot/gchopra/apps/candock/bslibdb
+       centro_clus_rad =                                               3
+              centroid =                                                
+  change_terminal_atom =                                                
+           clash_coeff =                                            0.75
+              clus_rad =                                               2
+           clusterfile =                             clustered_seeds.txt
+                  comp =                                         reduced
+             conf_spin =                                              10
+                config =                                                
+                  cuda =                                               0
+                cutoff =                                               6
+                  dist = /depot/gchopra/apps/candock/data/csd_complete_distance_distributions.txt
+       docked_clus_rad =                                               2
+            docked_dir =                                          docked
+     dynamic_step_size =                                               2
+         dynamic_steps =                                            1000
+              excluded =                                             0.8
+                fftype =                                              kb
+            force_seed =                                                
+          fragment_bag =                                                
+          fragment_mol =                                                
+              friction =                                              91
+                  func =                                          radial
+              gaff_dat =       /depot/gchopra/apps/candock/data/gaff.dat
+             gaff_heme =                                                
+              gaff_xml =       /depot/gchopra/apps/candock/data/gaff.xml
+                  grid =                                           0.375
+           gridpdb_hcp =                                 gridpdb_hcp.pdb
+            integrator =                                          verlet
+           interatomic =                                               8
+             iterative =                                               0
+           jiggle_seed =                                      1597463007
+                  json =                                     probis.json
+                jsonwl =                        probis_with_ligands.json
+         lig_clus_file =                             ligand_clusters.pdb
+                ligand =                                    ligands.mol2
+             link_iter =                                            1000
+   lower_tol_seed_dist =                                               2
+      max_allow_energy =                                               0
+       max_clique_size =                                               3
+       max_frag_radius =                                              16
+              max_iter =                                              10
+        max_iter_final =                                             100
+       max_num_ligands =                                              10
+     max_num_possibles =                                          200000
+     max_possible_conf =                                              -1
+              mini_tol =                                          0.0001
+                 names =  /depot/gchopra/apps/candock/bslibdb/data/names
+                  ncpu =                                              20
+                neighb =                                               0
+          new_scaffold =                                               0
+                 nosql =                                    probis.nosql
+            num_bsites =                                               3
+            num_univec =                                             256
+               obj_dir =                 /depot/gchopra/apps/candock/obj
+               pos_tol =                                           1e-11
+        potential_file =                                  potentials.txt
+                  prep =                            prepared_ligands.pdb
+       probis_clus_rad =                                               3
+        probis_min_pts =                                              10
+    probis_min_z_score =                                             2.5
+              receptor =                                    receptor.pdb
+                   ref =                                            mean
+          rmsd_crystal =                                               0
+                 scale =                                              10
+                 seeds =                                       seeds.txt
+             seeds_pdb =                                       seeds.pdb
+        seeds_till_bad =                                              -1
+       seeds_till_good =                                              -1
+          seeds_to_add =                                              50
+        seeds_to_avoid =                                              50
+                  spin =                                              60
+              srf_file =                                      probis.srf
+                  step =                                            0.01
+            target_dir =                                                
+        target_linking =                                               1
+           temperature =                                             300
+         tol_seed_dist =                                               2
+           top_percent =                                            0.05
+         top_seeds_dir =                                                
+           update_freq =                                              10
+   upper_tol_seed_dist =                                               2
+             water_xml =      /depot/gchopra/apps/candock/data/tip3p.xml
+         z_scores_file =                                    z_scores.pdb
+
+Fragmenting files in ligands.mol2
+Running PROBIS for receptor in file: receptor.pdb
+Starting ProBiS for binding sites prediction
+--- Complete proteins' search ---
+MODIFIERS USED: local longnames 
+PARAMETERS USED - To modify, copy rows between the
+dashed lines to a separate input parameter file -
+----------------------------------------------------------
+NCPU		                20
+SRF_FILE                /scratch/bell/gwijewar/Akt1/prf/inactive/3ocb/receptor/probis.srf
+PROTEIN1                /scratch/bell/gwijewar/Akt1/prf/inactive/3ocb/receptor.pdb
+PROTEIN2                
+CHAIN1                  A
+CHAIN2                  
+INTER_CHAIN_DIST        3
+SURF_FILE               bslibdb/bslib.txt
+INDIR                   
+OUTDIR                  
+SPACING                 3
+PROBE                   1.4
+MAXR                    1.8
+CATOM                   1.5
+NATOM                   1.45
+OATOM                   1.35
+SATOM                   1.7
+HATOM                   1
+EPS                     0.001
+SURF                    1.1
+DESC_PROBE_DIST         3
+BFACTOR                 0.8
+POP_MEAN                1.958
+POP_SD                  2.21468
+NFP                     0.25
+SITE_RMSD               3 *
+RESOLUTION              2
+OGA                     1
+OGB                     1
+OGC                     1
+OGV                     2
+THRMSD                  1.2
+CUTOFF_FIRST            9
+CUTOFF_SECOND           15
+NORM_EPS                1e-08
+MAX_VERTICES            20000 *
+MATRIX_CUTOFF           0.2
+VECTOR_CUTOFF           2
+RMSD_INCR               0.5
+RMSD_INCR_ADD           0.6
+WORD                    32 *
+CLIQUE_TLIMIT           1
+CLUS_SPEC               5
+CLUS_TO_OUTPUT          5
+SCONS                   4
+ALIGNMENT_NO            0
+BLOSUM                  blosum80
+MOTIF1                  
+MOTIF2                  
+BSITE1                  
+BSITE2                  
+SURF_VECTOR_ANGLE       1.5708
+BLOSUM_SCORE            10000
+CALPHA_RMSD             3
+K                       0.17
+LAMBDA                  0.343
+Z_SCORE                 1
+Z_SCORE_CONS            2
+Z_SCORE_FP              3
+GLOBAL_DIST             10
+GLOBAL_SVAL             23
+GLOBAL_ANGLE            0.7854
+LIG_NEIGHB             2
+PP_DIST                10
+SL_DIST                8
+NU_DIST                10
+IO_DIST                5
+NCLTRIES               100
+NMOL                   0
+LIGDIR                 
+NOSQL_FILE             /scratch/bell/gwijewar/Akt1/prf/inactive/3ocb/receptor/probis.nosql
+JSON_FILE              /scratch/bell/gwijewar/Akt1/prf/inactive/3ocb/receptor/probis.json
+----------------------------------------------------------
+(*) These parameters cannot be changed.
+Setting descriptors ...
+THREAD> Initializing thread 0
+THREAD> Initializing thread 1
+THREAD> Initializing thread 2
+THREAD> Initializing thread 3
+THREAD> Initializing thread 4
+THREAD> Initializing thread 5
+THREAD> Initializing thread 6
+THREAD> Initializing thread 7
+THREAD> Initializing thread 8
+THREAD> Initializing thread 9
+THREAD> Initializing thread 10
+THREAD> Initializing thread 11
+THREAD> Initializing thread 12
+THREAD> Initializing thread 13
+THREAD> Initializing thread 14
+THREAD> Initializing thread 15
+THREAD> Initializing thread 16
+THREAD> Initializing thread 17
+THREAD> Initializing thread 18
+THREAD> Initializing thread 19
+*** Error in `/depot/gchopra/apps/candock/v0.4.3_slurm/modules/../bin/v0.4.3/cd_link_fragments': double free or corruption (out): 0x00002af2c88ddbf0 ***
+======= Backtrace: =========
+/lib64/libc.so.6(+0x81299)[0x2af2ae661299]
+/depot/gchopra/apps/candock/lib/v0.4.3/libcandock.so(_ZN4GridD2Ev+0x74)[0x2af2ac575254]
+/depot/gchopra/apps/candock/lib/v0.4.3/libcandock.so(_Z6state0RN5NoSql11WriteStructESsSs+0x126a)[0x2af2ac5b9c6a]
+/depot/gchopra/apps/candock/lib/v0.4.3/libcandock.so(_Z6state0SsSs+0x68)[0x2af2ac5ba1e8]
+/depot/gchopra/apps/candock/lib/v0.4.3/libcandock.so(+0x44b907)[0x2af2ac5ba907]
+/depot/gchopra/apps/candock/lib/v0.4.3/libcandock.so(+0x471b60)[0x2af2ac5e0b60]
+/lib64/libpthread.so.0(+0x7ea5)[0x2af2ac86bea5]
+/lib64/libc.so.6(clone+0x6d)[0x2af2ae6de8dd]
+======= Memory map: ========
+00400000-0041b000 r-xp 00000000 00:2d 694536664                          /depot-old/gchopra/apps/candock/v0.4.3_slurm/bin/v0.4.3/cd_link_fragments
+0061b000-0061c000 rw-p 0001b000 00:2d 694536664                          /depot-old/gchopra/apps/candock/v0.4.3_slurm/bin/v0.4.3/cd_link_fragments
+019b2000-024c6000 rw-p 00000000 00:00 0                                  [heap]
+3358a00000-3358bea000 r-xp 00000000 00:2d 434590689                      /depot-old/gchopra/apps/candock/lib/v0.4.3/libgsl.so.0
+3358bea000-3358de9000 ---p 001ea000 00:2d 434590689                      /depot-old/gchopra/apps/candock/lib/v0.4.3/libgsl.so.0
+3358de9000-3358df7000 rw-p 001e9000 00:2d 434590689                      /depot-old/gchopra/apps/candock/lib/v0.4.3/libgsl.so.0
+3359200000-3359237000 r-xp 00000000 00:2d 434590695                      /depot-old/gchopra/apps/candock/lib/v0.4.3/libgslcblas.so.0
+3359237000-3359436000 ---p 00037000 00:2d 434590695                      /depot-old/gchopra/apps/candock/lib/v0.4.3/libgslcblas.so.0
+3359436000-3359437000 rw-p 00036000 00:2d 434590695                      /depot-old/gchopra/apps/candock/lib/v0.4.3/libgslcblas.so.0
+2af2abf4b000-2af2abf6d000 r-xp 00000000 00:24 78473                      /usr/lib64/ld-2.17.so
+2af2abf6d000-2af2abf72000 rw-p 00000000 00:00 0 
+2af2abf85000-2af2abf95000 rw-p 00000000 00:00 0 
+2af2ac16c000-2af2ac16d000 r--p 00021000 00:24 78473                      /usr/lib64/ld-2.17.so
+2af2ac16d000-2af2ac16e000 rw-p 00022000 00:24 78473                      /usr/lib64/ld-2.17.so
+2af2ac16e000-2af2ac16f000 rw-p 00000000 00:00 0 
+2af2ac16f000-2af2ac64d000 r-xp 00000000 00:2d 117683270                  /depot-old/gchopra/apps/candock/lib/v0.4.3/libcandock.so
+2af2ac64d000-2af2ac84d000 ---p 004de000 00:2d 117683270                  /depot-old/gchopra/apps/candock/lib/v0.4.3/libcandock.so
+2af2ac84d000-2af2ac858000 rw-p 004de000 00:2d 117683270                  /depot-old/gchopra/apps/candock/lib/v0.4.3/libcandock.so
+2af2ac858000-2af2ac864000 rw-p 00000000 00:00 0 
+2af2ac864000-2af2ac87b000 r-xp 00000000 00:24 78971                      /usr/lib64/libpthread-2.17.so
+2af2ac87b000-2af2aca7a000 ---p 00017000 00:24 78971                      /usr/lib64/libpthread-2.17.so
+2af2aca7a000-2af2aca7b000 r--p 00016000 00:24 78971                      /usr/lib64/libpthread-2.17.so
+2af2aca7b000-2af2aca7c000 rw-p 00017000 00:24 78971                      /usr/lib64/libpthread-2.17.so
+2af2aca7c000-2af2aca80000 rw-p 00000000 00:00 0 
+2af2aca80000-2af2aca82000 r-xp 00000000 00:24 78766                      /usr/lib64/libdl-2.17.so
+2af2aca82000-2af2acc82000 ---p 00002000 00:24 78766                      /usr/lib64/libdl-2.17.so
+2af2acc82000-2af2acc83000 r--p 00002000 00:24 78766                      /usr/lib64/libdl-2.17.so
+2af2acc83000-2af2acc84000 rw-p 00003000 00:24 78766                      /usr/lib64/libdl-2.17.so
+2af2acc84000-2af2acf1d000 r-xp 00000000 00:2d 117719065                  /depot-old/gchopra/apps/openmm/lib/libOpenMM.so
+2af2acf1d000-2af2ad11d000 ---p 00299000 00:2d 117719065                  /depot-old/gchopra/apps/openmm/lib/libOpenMM.so
+2af2ad11d000-2af2ad128000 rw-p 00299000 00:2d 117719065                  /depot-old/gchopra/apps/openmm/lib/libOpenMM.so
+2af2ad128000-2af2ad129000 rw-p 00000000 00:00 0 
+2af2ad129000-2af2ad12f000 r-xp 00000000 00:2d 33892592                   /depot-old/gchopra/apps/openmm/lib/libKBPlugin.so
+2af2ad12f000-2af2ad32e000 ---p 00006000 00:2d 33892592                   /depot-old/gchopra/apps/openmm/lib/libKBPlugin.so
+2af2ad32e000-2af2ad32f000 rw-p 00005000 00:2d 33892592                   /depot-old/gchopra/apps/openmm/lib/libKBPlugin.so
+2af2ad32f000-2af2ad357000 r-xp 00000000 00:2d 117193111                  /depot-old/gchopra/apps/candock/lib/ext/libboost_filesystem.so.1.64.0
+2af2ad357000-2af2ad556000 ---p 00028000 00:2d 117193111                  /depot-old/gchopra/apps/candock/lib/ext/libboost_filesystem.so.1.64.0
+2af2ad556000-2af2ad558000 rw-p 00027000 00:2d 117193111                  /depot-old/gchopra/apps/candock/lib/ext/libboost_filesystem.so.1.64.0
+2af2ad558000-2af2ad55b000 r-xp 00000000 00:2d 117193115                  /depot-old/gchopra/apps/candock/lib/ext/libboost_system.so.1.64.0
+2af2ad55b000-2af2ad75a000 ---p 00003000 00:2d 117193115                  /depot-old/gchopra/apps/candock/lib/ext/libboost_system.so.1.64.0
+2af2ad75a000-2af2ad75b000 rw-p 00002000 00:2d 117193115                  /depot-old/gchopra/apps/candock/lib/ext/libboost_system.so.1.64.0
+2af2ad75b000-2af2ad859000 r-xp 00000000 00:2d 117193114                  /depot-old/gchopra/apps/candock/lib/ext/libboost_regex.so.1.64.0
+2af2ad859000-2af2ada59000 ---p 000fe000 00:2d 117193114                  /depot-old/gchopra/apps/candock/lib/ext/libboost_regex.so.1.64.0
+2af2ada59000-2af2ada5f000 rw-p 000fe000 00:2d 117193114                  /depot-old/gchopra/apps/candock/lib/ext/libboost_regex.so.1.64.0
+2af2ada5f000-2af2adae9000 r-xp 00000000 00:2d 117193113                  /depot-old/gchopra/apps/candock/lib/ext/libboost_program_options.so.1.64.0
+2af2adae9000-2af2adce8000 ---p 0008a000 00:2d 117193113                  /depot-old/gchopra/apps/candock/lib/ext/libboost_program_options.so.1.64.0
+2af2adce8000-2af2adcec000 rw-p 00089000 00:2d 117193113                  /depot-old/gchopra/apps/candock/lib/ext/libboost_program_options.so.1.64.0
+2af2adcec000-2af2adeb5000 r-xp 00000000 00:2b 6737999                    /apps/spack/bell/apps/gcc/9.3.0-gcc-4.8.5-z2ug7z7/lib64/libstdc++.so.6.0.28
+2af2adeb5000-2af2ae0b5000 ---p 001c9000 00:2b 6737999                    /apps/spack/bell/apps/gcc/9.3.0-gcc-4.8.5-z2ug7z7/lib64/libstdc++.so.6.0.28
+2af2ae0b5000-2af2ae0c0000 r--p 001c9000 00:2b 6737999                    /apps/spack/bell/apps/gcc/9.3.0-gcc-4.8.5-z2ug7z7/lib64/libstdc++.so.6.0.28
+2af2ae0c0000-2af2ae0c3000 rw-p 001d4000 00:2b 6737999                    /apps/spack/bell/apps/gcc/9.3.0-gcc-4.8.5-z2ug7z7/lib64/libstdc++.so.6.0.28
+2af2ae0c3000-2af2ae0c6000 rw-p 00000000 00:00 0 
+2af2ae0c6000-2af2ae1c7000 r-xp 00000000 00:24 78770                      /usr/lib64/libm-2.17.so
+2af2ae1c7000-2af2ae3c6000 ---p 00101000 00:24 78770                      /usr/lib64/libm-2.17.so
+2af2ae3c6000-2af2ae3c7000 r--p 00100000 00:24 78770                      /usr/lib64/libm-2.17.so
+2af2ae3c7000-2af2ae3c8000 rw-p 00101000 00:24 78770                      /usr/lib64/libm-2.17.so
+2af2ae3c8000-2af2ae3df000 r-xp 00000000 00:2b 6737939                    /apps/spack/bell/apps/gcc/9.3.0-gcc-4.8.5-z2ug7z7/lib64/libgcc_s.so.1
+2af2ae3df000-2af2ae5de000 ---p 00017000 00:2b 6737939                    /apps/spack/bell/apps/gcc/9.3.0-gcc-4.8.5-z2ug7z7/lib64/libgcc_s.so.1
+2af2ae5de000-2af2ae5df000 r--p 00016000 00:2b 6737939                    /apps/spack/bell/apps/gcc/9.3.0-gcc-4.8.5-z2ug7z7/lib64/libgcc_s.so.1
+2af2ae5df000-2af2ae5e0000 rw-p 00017000 00:2b 6737939                    /apps/spack/bell/apps/gcc/9.3.0-gcc-4.8.5-z2ug7z7/lib64/libgcc_s.so.1
+2af2ae5e0000-2af2ae7a3000 r-xp 00000000 00:24 78754                      /usr/lib64/libc-2.17.so
+2af2ae7a3000-2af2ae9a3000 ---p 001c3000 00:24 78754                      /usr/lib64/libc-2.17.so
+2af2ae9a3000-2af2ae9a7000 r--p 001c3000 00:24 78754                      /usr/lib64/libc-2.17.so
+2af2ae9a7000-2af2ae9a9000 rw-p 001c7000 00:24 78754                      /usr/lib64/libc-2.17.so
+2af2ae9a9000-2af2ae9ae000 rw-p 00000000 00:00 0 
+2af2ae9ae000-2af2ae9b5000 r-xp 00000000 00:24 78989                      /usr/lib64/librt-2.17.so
+2af2ae9b5000-2af2aebb4000 ---p 00007000 00:24 78989                      /usr/lib64/librt-2.17.so
+2af2aebb4000-2af2aebb5000 r--p 00006000 00:24 78989                      /usr/lib64/librt-2.17.so
+2af2aebb5000-2af2aebb6000 rw-p 00007000 00:24 78989                      /usr/lib64/librt-2.17.so
+2af2aebb6000-2af2aebb7000 ---p 00000000 00:00 0 
+2af2aebb7000-2af2aedb7000 rw-p 00000000 00:00 0 
+2af2aedb7000-2af2aedb8000 ---p 00000000 00:00 0 
+2af2aedb8000-2af2aefb8000 rw-p 00000000 00:00 0 
+2af2aefb8000-2af2aefb9000 ---p 00000000 00:00 0 
+2af2aefb9000-2af2af1b9000 rw-p 00000000 00:00 0 
+2af2af1b9000-2af2af1ba000 ---p 00000000 00:00 0 
+2af2af1ba000-2af2af3ba000 rw-p 00000000 00:00 0 
+2af2af3ba000-2af2af3bb000 ---p 00000000 00:00 0 
+2af2af3bb000-2af2af5bb000 rw-p 00000000 00:00 0 
+2af2af5bb000-2af2af5bc000 ---p 00000000 00:00 0 
+2af2af5bc000-2af2af7bc000 rw-p 00000000 00:00 0 
+2af2af7bc000-2af2af7bd000 ---p 00000000 00:00 0 
+2af2af7bd000-2af2af9bd000 rw-p 00000000 00:00 0 
+2af2af9bd000-2af2af9be000 ---p 00000000 00:00 0 
+2af2af9be000-2af2afbbe000 rw-p 00000000 00:00 0 
+2af2afbbe000-2af2afbbf000 ---p 00000000 00:00 0 
+2af2afbbf000-2af2afdbf000 rw-p 00000000 00:00 0 
+2af2afdbf000-2af2afdc0000 ---p 00000000 00:00 0 
+2af2afdc0000-2af2affc0000 rw-p 00000000 00:00 0 
+2af2b0000000-2af2b0ba9000 rw-p 00000000 00:00 0 
+2af2b0ba9000-2af2b4000000 ---p 00000000 00:00 0 
+2af2b4000000-2af2b4001000 ---p 00000000 00:00 0 
+2af2b4001000-2af2b4201000 rw-p 00000000 00:00 0 
+2af2b4201000-2af2b4202000 ---p 00000000 00:00 0 
+2af2b4202000-2af2b4402000 rw-p 00000000 00:00 0 
+2af2b4402000-2af2b4403000 ---p 00000000 00:00 0 
+2af2b4403000-2af2b4603000 rw-p 00000000 00:00 0 
+2af2b4603000-2af2b4604000 ---p 00000000 00:00 0 
+2af2b4604000-2af2b4804000 rw-p 00000000 00:00 0 
+2af2b4804000-2af2b4805000 ---p 00000000 00:00 0 
+2af2b4805000-2af2b4a05000 rw-p 00000000 00:00 0 
+2af2b4a05000-2af2b4a06000 ---p 00000000 00:00 0 
+2af2b4a06000-2af2b4c06000 rw-p 00000000 00:00 0 
+2af2b4c06000-2af2b4c07000 ---p 00000000 00:00 0 
+2af2b4c07000-2af2b4e07000 rw-p 00000000 00:00 0 
+2af2b4e07000-2af2b4e08000 ---p 00000000 00:00 0 
+2af2b4e08000-2af2b5008000 rw-p 00000000 00:00 0 
+2af2b5008000-2af2b5009000 ---p 00000000 00:00 0 
+2af2b5009000-2af2b5209000 rw-p 00000000 00:00 0 
+2af2b71b9000-2af2b71ba000 ---p 00000000 00:00 0 
+2af2b71ba000-2af2b73ba000 rw-p 00000000 00:00 0 
+2af2b8000000-2af2b8b7b000 rw-p 00000000 00:00 0 
+2af2b8b7b000-2af2bc000000 ---p 00000000 00:00 0 
+2af2bc000000-2af2bcc80000 rw-p 00000000 00:00 0 
+2af2bcc80000-2af2c0000000 ---p 00000000 00:00 0 
+2af2c0000000-2af2c0b29000 rw-p 00000000 00:00 0 
+2af2c0b29000-2af2c4000000 ---p 00000000 00:00 0 
+2af2c4000000-2af2c4cca000 rw-p 00000000 00:00 0 
+2af2c4cca000-2af2c8000000 ---p 00000000 00:00 0 
+2af2c8000000-2af2c8bab000 rw-p 00000000 00:00 0 
+2af2c8bab000-2af2cc000000 ---p 00000000 00:00 0 
+2af2cc000000-2af2ccb95000 rw-p 00000000 00:00 0 
+2af2ccb95000-2af2d0000000 ---p 00000000 00:00 0 
+2af2d0000000-2af2d0ce0000 rw-p 00000000 00:00 0 
+2af2d0ce0000-2af2d4000000 ---p 00000000 00:00 0 
+2af2d4000000-2af2d4be9000 rw-p 00000000 00:00 0 
+2af2d4be9000-2af2d8000000 ---p 00000000 00:00 0 
+2af2d8000000-2af2d8b35000 rw-p 00000000 00:00 0 
+2af2d8b35000-2af2dc000000 ---p 00000000 00:00 0 
+2af2dc000000-2af2dcc35000 rw-p 00000000 00:00 0 
+2af2dcc35000-2af2e0000000 ---p 00000000 00:00 0 
+2af2e0000000-2af2e0c06000 rw-p 00000000 00:00 0 
+2af2e0c06000-2af2e4000000 ---p 00000000 00:00 0 
+2af2e4000000-2af2e4c14000 rw-p 00000000 00:00 0 
+2af2e4c14000-2af2e8000000 ---p 00000000 00:00 0 
+2af2e8000000-2af2e8bd1000 rw-p 00000000 00:00 0 
+2af2e8bd1000-2af2ec000000 ---p 00000000 00:00 0 
+2af2ec000000-2af2ecbb5000 rw-p 00000000 00:00 0 
+2af2ecbb5000-2af2f0000000 ---p 00000000 00:00 0 
+2af2f0000000-2af2f0c63000 rw-p 00000000 00:00 0 
+2af2f0c63000-2af2f4000000 ---p 00000000 00:00 0 
+2af2f4000000-2af2f4c0b000 rw-p 00000000 00:00 0 
+2af2f4c0b000-2af2f8000000 ---p 00000000 00:00 0 
+2af2f8000000-2af2f8cba000 rw-p 00000000 00:00 0 
+2af2f8cba000-2af2fc000000 ---p 00000000 00:00 0 
+2af2fc000000-2af2fcbb9000 rw-p 00000000 00:00 0 
+2af2fcbb9000-2af300000000 ---p 00000000 00:00 0 
+2af300000000-2af300c33000 rw-p 00000000 00:00 0 
+2af300c33000-2af304000000 ---p 00000000 00:00 0 
+2af304000000-2af30cf49000 rw-p 00000000 00:00 0 
+2af312ecf000-2af31be18000 rw-p 00000000 00:00 0 
+7ffe61210000-7ffe61234000 rw-p 00000000 00:00 0                          [stack]
+7ffe613ea000-7ffe613ec000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+/var/spool/slurm/job2988678/slurm_script: line 43: 104332 Aborted                 $MCANDOCK_MOD_PATH/../bin/v0.4.3/cd_${__sub_program} $([[ ! -z "$@" ]] && echo "$@")
