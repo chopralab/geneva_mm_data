@@ -1,0 +1,3 @@
+[submodule "compound_protein_interaction/CPI_prediction"]
+	path = compound_protein_interaction/CPI_prediction
+	url = https://github.com/masashitsubaki/CPI_prediction.git
