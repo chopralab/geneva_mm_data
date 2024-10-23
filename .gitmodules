@@ -1,3 +1,6 @@
 [submodule "compound_protein_interaction/CPI_prediction"]
 	path = compound_protein_interaction/CPI_prediction
 	url = https://github.com/masashitsubaki/CPI_prediction.git
+[submodule "docking/candock"]
+	path = docking/candock
+	url = https://github.com/chopralab/candock.git
