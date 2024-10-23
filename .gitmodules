@@ -4,3 +4,6 @@
 [submodule "docking/candock"]
 	path = docking/candock
 	url = https://github.com/chopralab/candock.git
+[submodule "md_simulations/gromacs"]
+	path = md_simulations/gromacs
+	url = https://github.com/gromacs/gromacs.git
