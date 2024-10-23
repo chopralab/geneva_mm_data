@@ -7,3 +7,6 @@
 [submodule "md_simulations/gromacs"]
 	path = md_simulations/gromacs
 	url = https://github.com/gromacs/gromacs.git
+[submodule "CANDO"]
+	path = CANDO
+	url = https://github.com/ram-compbio/CANDO.git
