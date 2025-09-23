@@ -1,6 +1,6 @@
 # geneva_mm_data
 
-Research data and workflows for the **Geneva (Geneva-MM)** project at Chopra Lab, focused on small‑molecule **docking**, **compound–protein interaction** analyses, and **molecular dynamics (MD) simulations)**. The repository includes code and data to take ligands from interaction‑matrix style resources through docking and MD refinement, with utilities for aggregating results into downstream analysis tables.
+Research data and workflows for the **Geneva (Geneva-MM)** project at Chopra Lab, focused on small‑molecule **docking**, **compound–protein interaction** analyses, and **molecular dynamics (MD) simulations**. The repository includes code and data to take ligands from interaction‑matrix style resources through docking and MD refinement, with utilities for aggregating results into downstream analysis tables.
 
 ---
 
