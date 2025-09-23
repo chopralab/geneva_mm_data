@@ -27,38 +27,6 @@ Research data and workflows for the **Geneva (Geneva-MM)** project at Chopra Lab
 
 > If you add new modules, follow the same pattern: keep raw inputs under `inputs/`, generated intermediates under `processed/`, and finalized outputs under `results/` inside each subfolder.
 
----
-
-## Getting started
-
-### 1) Clone and initialize submodules
-
-```bash
-# HTTPS
-git clone https://github.com/chopralab/geneva_mm_data.git
-cd geneva_mm_data
-
-# If submodules are present
-git submodule update --init --recursive
-```
-
-### 2) Recommended environment
-
-Create a Python environment with common cheminformatics & MD analysis tools:
-
-```bash
-# Example with conda (adjust versions as needed)
-conda create -n geneva-mm python=3.10 -y
-conda activate geneva-mm
-conda install -c conda-forge rdkit mdanalysis pandas numpy scipy matplotlib jupyter -y
-```
-
-Optional tools you may need depending on the workflow:
-
-- **Docking:** AutoDock Vina, GNINA, UniDock (installed separately)
-- **MD:** GROMACS (for preparation/runs), OpenMM (optional), MDTraj
-- **Data I/O:** pyarrow, polars (optional), biopython
-
 ### 3) Typical workflow
 
 **A. Prepare compound and protein inputs**
@@ -78,43 +46,6 @@ Optional tools you may need depending on the workflow:
 - Run equilibration + production MD.
 - Analyze stability (RMSD, contacts, H‑bonds, MM/GBSA if applicable) and export plots/tables.
 
----
-
-## Data layout conventions
-
-Within each module:
-
-```
-module/
-├── inputs/      # Raw inputs (PDB, SDF/SMI, FASTA, CSVs)
-├── processed/   # Generated or standardized intermediates
-├── results/     # Final tables, plots, archives
-└── notebooks/   # Optional Jupyter notebooks for EDA/analysis
-```
-
-Use snake_case for filenames and prefer machine‑readable CSV/Parquet for tables.
-
----
-
-## Reproducing results
-
-1. Ensure software dependencies are installed (see above).
-2. Inspect each folder’s README or script headers for specific command lines.
-3. Run workflows in the order **prepare → dock → aggregate → MD → analyze**.
-4. Save merged analysis tables under `results/` with versioned names (e.g., `results/poses_YYYYMMDD.parquet`).
-
-> For heavy computations (docking/MD), prefer HPC or GPU nodes. Keep raw trajectories outside the repo and store derived metrics (CSV/Parquet) here.
-
----
-
-## Contributing
-
-- Use feature branches and pull requests.
-- Keep modules self‑contained (inputs/processed/results).
-- Add minimal README snippets to any new subfolders.
-- Include environment and command examples in script headers.
-
----
 
 ## Citation
 
@@ -126,23 +57,3 @@ If this repository contributes to your research, please cite the Chopra Lab and 
 
 - Prageeth Wijewardhane (@gwijewar / @prageethrw)
 - Matthew Muhoberac (@mmuhoberac)
-
----
-
-## License
-
-If a license file is not present, please contact the maintainers about usage terms before redistributing or publishing derivative work.
-
----
-
-## FAQ
-
-**Q: Which docking engine is supported?**  
-A: The repository is engine‑agnostic; use Vina, GNINA, UniDock, or your in‑house pipeline. Provide parsers that emit consistent CSV summaries.
-
-**Q: Where should I place large binaries (e.g., trajectories)?**  
-A: Prefer external object storage (e.g., lab server or S3) and commit only derived, compact results here. Provide download scripts if raw data are required.
-
-**Q: How do I validate docked poses?**  
-A: Pair docking with short MD, then evaluate pose stability via RMSD, hydrogen bonds, and contact persistence; flag strained/unstable interactions for review.
-
